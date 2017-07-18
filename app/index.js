@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import { render } from 'react-dom'
+import React, { Component } from 'react';
+import { render } from 'react-dom';
 
 class Root extends Component {
   componentDidMount() {
@@ -9,8 +9,8 @@ class Root extends Component {
   render() {
     return (
       <div>Hello World</div>
-    )
+    );
   }
 }
 
-render(<Root />, document.getElementById('main'))
+render(<Root />, document.getElementById('main'));
