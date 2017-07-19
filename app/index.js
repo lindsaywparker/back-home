@@ -1,16 +1,24 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
+import ReactDOM from 'react-dom';
+import { createStore, combineReducers, applyMiddleware } from 'redux';
+import thunk from 'redux-thunk';
+import { Provider } from 'react-redux';
+import { ConnectedRouter, routerReducer, routerMiddleware } from 'react-router-redux';
+import createHistory from 'history/createBrowserHistory';
+import { Route } from 'react-router-dom';
+import rootReducer from '../src/reducers';
 
-class Root extends Component {
-  componentDidMount() {
-    // INSERT API CALL TO YOUR INTERNAL API
-  }
+const devTools = window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__();
+const history = createHistory();
+const middleware = routerMiddleware(history);
+const store = createStore(rootReducer,
+  devTools,
+  applyMiddleware(middleware, thunk));
 
-  render() {
-    return (
-      <div>Hello World</div>
-    );
-  }
-}
-
-render(<Root />, document.getElementById('main'));
+ReactDOM.render(
+  <Provider store={store}>
+    <ConnectedRouter history={history} >
+      <Route to='/' component={AppContainer} />
+    </ConnectedRouter>
+  </Provider>, document.getElementById('main'));
