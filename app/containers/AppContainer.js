@@ -1,4 +1,11 @@
 import { connect } from 'react-redux';
 import App from '../components/App';
+// import { scrapeImagesAction } from '../actions/images';
 
-export default connect(null, null)(App);
+const mapDispatchToProps = (dispatch) => {
+  return {
+    scrapeImages: () => dispatch(scrapeImagesAction()),
+  };
+};
+
+export default connect(null, mapDispatchToProps)(App);
