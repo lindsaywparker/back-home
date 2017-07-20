@@ -24,7 +24,9 @@ styles.forEach((style) => {
         category,
       };
 
-      parsedResults.push(json);
+      if (src.indexOf(style) !== -1) {
+        parsedResults.push(json);
+      }
     });
     fs.writeFile('src/helpers/results.json', JSON.stringify(parsedResults, null, 4));
   });
