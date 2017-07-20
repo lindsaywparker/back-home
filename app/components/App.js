@@ -7,6 +7,7 @@ class App extends Component {
     return (
       <div>
         Hi, I'm components/App.js
+        <Header />
       </div>
     );
   }
