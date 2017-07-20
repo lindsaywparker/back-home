@@ -1,15 +1,9 @@
-const request = require('request');
+const resultsFile = require('./helpers/results.json');
 
-const BASE_URL = 'http://swapi.co/api/people/';
-
-function getPlaces(req, res, next) {
-  request(BASE_URL, (error, response, body) => {
-    if (!error && response.statusCode === 200) {
-      res.send(body);
-    }
-  });
+function getImages(req, res, next) {
+  res.status(200).send(resultsFile);
 }
 
 module.exports = {
-  getPlaces,
+  getImages,
 };
