@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
+import { Route } from 'react-router-dom';
 import Header from './Header';
+import Home from './Home';
+import MainContainer from '../containers/MainContainer';
+import StylesComparisonContainer from '../containers/StylesComparisonContainer';
 
 class App extends Component {
   render() {
@@ -7,6 +11,19 @@ class App extends Component {
       <div>
         Hi, I'm components/App.js
         <Header />
+        <Route exact
+               path='/'
+               component={Home} />
+        <Route exact
+               path='/styles'
+               component={StylesComparisonContainer} />
+        <Route exact
+               path='/favorites'
+               component={MainContainer} />
+        {/* <Route path='/:style'
+                   render={() => <Main />} />*/}
+        {/* <Route path='/all/:category'
+                   render={() => <Main />} /> */}
       </div>
     );
   }

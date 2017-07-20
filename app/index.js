@@ -8,7 +8,7 @@ import { ConnectedRouter, routerReducer, routerMiddleware } from 'react-router-r
 import createHistory from 'history/createBrowserHistory';
 import { Route } from 'react-router-dom';
 import rootReducer from './reducers';
-import AppContainer from './containers/AppContainer';
+import App from './components/App';
 
 const devTools = window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__();
 const history = createHistory();
@@ -20,6 +20,6 @@ const store = createStore(rootReducer,
 ReactDOM.render(
   <Provider store={store}>
     <ConnectedRouter history={history} >
-      <AppContainer />
+      <App />
     </ConnectedRouter>
   </Provider>, document.getElementById('main'));
