@@ -14,16 +14,19 @@ styles.forEach((style) => {
     const $ = cheerio.load(html);
 
     $('div.whiteCard').each(function (index) {
-      const image = $(this).find('img.hide-context').attr('src');
-      const startIndex = image.indexOf('--');
-      const endIndex = image.indexOf('.jpg');
-      const tags = image.slice(startIndex, endIndex);
+      const src = $(this).find('img.hide-context').attr('src');
+      const startIndex = src.indexOf(`${style}-`) !== -1 ? src.indexOf(`${style}-`) + style.length + 1 : -1;
+      const endIndex = src.indexOf('.jpg');
+      const category = src.slice(startIndex, endIndex);
       const json = {
-        image,
-        tags,
+        src,
+        style,
+        category,
       };
 
-      parsedResults.push(json);
+      if (src.indexOf(style) !== -1) {
+        parsedResults.push(json);
+      }
     });
     fs.writeFile('src/helpers/results.json', JSON.stringify(parsedResults, null, 4));
   });
