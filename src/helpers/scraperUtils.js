@@ -14,12 +14,12 @@ styles.forEach((style) => {
     const $ = cheerio.load(html);
 
     $('div.whiteCard').each(function (index) {
-      const image = $(this).find('img.hide-context').attr('src');
-      const startIndex = image.indexOf('--');
-      const endIndex = image.indexOf('.jpg');
-      const tags = image.slice(startIndex, endIndex);
+      const src = $(this).find('img.hide-context').attr('src');
+      const startIndex = src.indexOf('--');
+      const endIndex = src.indexOf('.jpg');
+      const tags = src.slice(startIndex, endIndex);
       const json = {
-        image,
+        src,
         tags,
       };
 
