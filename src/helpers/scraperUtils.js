@@ -15,12 +15,13 @@ styles.forEach((style) => {
 
     $('div.whiteCard').each(function (index) {
       const src = $(this).find('img.hide-context').attr('src');
-      const startIndex = src.indexOf('--');
+      const startIndex = src.indexOf(`${style}-`) !== -1 ? src.indexOf(`${style}-`) + style.length + 1 : -1;
       const endIndex = src.indexOf('.jpg');
-      const tags = src.slice(startIndex, endIndex);
+      const category = src.slice(startIndex, endIndex);
       const json = {
         src,
-        tags,
+        style,
+        category,
       };
 
       parsedResults.push(json);
