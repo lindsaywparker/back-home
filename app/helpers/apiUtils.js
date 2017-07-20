@@ -1,5 +1,6 @@
 const fetchImages = () => {
-  return 'apiUtils says hi';
+  return fetch('/api/images')
+    .then(response => response.json());
 };
 
 export default fetchImages;
