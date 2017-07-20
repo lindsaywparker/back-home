@@ -1,6 +1,5 @@
 import { connect } from 'react-redux';
 import App from '../components/App';
-// import { scrapeImagesAction } from '../actions/images';
 
 const mapDispatchToProps = (dispatch) => {
   return {
