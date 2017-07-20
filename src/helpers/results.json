@@ -1,128 +1,83 @@
 [
     {
-        "src": "https://st.hzcdn.com/fimgs/31011d3c0939b72b_4536-w500-h400-b0-p0--contemporary-bathroom.jpg",
-        "style": "contemporary",
-        "category": "bathroom"
-    },
-    {
-        "src": "https://st.hzcdn.com/fimgs/7451764e0919fb71_1689-w500-h400-b0-p0--contemporary-kitchen.jpg",
-        "style": "contemporary",
+        "src": "https://st.hzcdn.com/fimgs/1b419f75077c12ce_5211-w500-h666-b0-p0--industrial-kitchen.jpg",
+        "style": "industrial",
         "category": "kitchen"
     },
     {
-        "src": "https://st.hzcdn.com/fimgs/ce4198e60919fbac_1826-w500-h400-b0-p0--contemporary-kitchen.jpg",
-        "style": "contemporary",
+        "src": "https://st.hzcdn.com/fimgs/25b130af077c12a4_2077-w500-h666-b0-p0--industrial.jpg",
+        "style": "industrial",
+        "category": ""
+    },
+    {
+        "src": "https://st.hzcdn.com/fimgs/9701392a077c1235_7721-w500-h400-b0-p0--industrial-kitchen.jpg",
+        "style": "industrial",
         "category": "kitchen"
     },
     {
-        "src": "https://st.hzcdn.com/simgs/1b51c3a102151eb0_15-5658/contemporary-living-room.jpg",
-        "style": "contemporary",
-        "category": "living-room"
-    },
-    {
-        "src": "https://st.hzcdn.com/fimgs/a7017599091c91c1_6962-w500-h666-b0-p0--contemporary-closet.jpg",
-        "style": "contemporary",
-        "category": "closet"
-    },
-    {
-        "src": "https://st.hzcdn.com/fimgs/7ed12580092dddad_9130-w500-h666-b0-p0--contemporary-kitchen.jpg",
-        "style": "contemporary",
+        "src": "https://st.hzcdn.com/fimgs/9bb13cfc077c12fa_5210-w500-h666-b0-p0--industrial-kitchen.jpg",
+        "style": "industrial",
         "category": "kitchen"
     },
     {
-        "src": "https://st.hzcdn.com/fimgs/3c517c1f090cc4ab_2014-w500-h400-b0-p0--contemporary-kitchen.jpg",
-        "style": "contemporary",
+        "src": "https://st.hzcdn.com/fimgs/aa21563a077c122a_5206-w500-h666-b0-p0--industrial-kitchen.jpg",
+        "style": "industrial",
         "category": "kitchen"
     },
     {
-        "src": "https://st.hzcdn.com/fimgs/07315cfb0912348f_0677-w500-h400-b0-p0--contemporary-bedroom.jpg",
-        "style": "contemporary",
-        "category": "bedroom"
+        "src": "https://st.hzcdn.com/fimgs/b471686c077c12da_2083-w500-h666-b0-p0--industrial.jpg",
+        "style": "industrial",
+        "category": ""
     },
     {
-        "src": "https://st.hzcdn.com/fimgs/2b51732909094d0b_2252-w500-h666-b0-p0--contemporary-bedroom.jpg",
-        "style": "contemporary",
-        "category": "bedroom"
-    },
-    {
-        "src": "https://st.hzcdn.com/fimgs/64b1594d0956d05f_3687-w500-h400-b0-p0--farmhouse-kitchen.jpg",
-        "style": "farmhouse",
+        "src": "https://st.hzcdn.com/fimgs/323108c3077c121f_5205-w500-h666-b0-p0--industrial-kitchen.jpg",
+        "style": "industrial",
         "category": "kitchen"
     },
     {
-        "src": "https://st.hzcdn.com/fimgs/1931e9240956d079_3671-w500-h400-b0-p0--farmhouse-kitchen.jpg",
-        "style": "farmhouse",
-        "category": "kitchen"
-    },
-    {
-        "src": "https://st.hzcdn.com/fimgs/e6a10d1c053ff147_0863-w500-h400-b0-p0--farmhouse-landscape.jpg",
-        "style": "farmhouse",
-        "category": "landscape"
-    },
-    {
-        "src": "https://st.hzcdn.com/fimgs/a781bc8a009d3cb1_3376-w500-h400-b0-p0--farmhouse-patio.jpg",
-        "style": "farmhouse",
+        "src": "https://st.hzcdn.com/fimgs/27d104ea093acc8f_7876-w500-h400-b0-p0--industrial-patio.jpg",
+        "style": "industrial",
         "category": "patio"
     },
     {
-        "src": "https://st.hzcdn.com/fimgs/86e18ed105503946_9253-w500-h400-b0-p0--farmhouse-exterior.jpg",
-        "style": "farmhouse",
-        "category": "exterior"
-    },
-    {
-        "src": "https://st.hzcdn.com/fimgs/6ef1a6780510e446_4474-w500-h400-b0-p0--farmhouse-dining-room.jpg",
-        "style": "farmhouse",
+        "src": "https://st.hzcdn.com/fimgs/9a11ee5f08869e05_7576-w500-h666-b0-p0-q80--shabby-chic-style-dining-room.jpg",
+        "style": "shabby-chic-style",
         "category": "dining-room"
     },
     {
-        "src": "https://st.hzcdn.com/fimgs/77d1b5d507714825_0725-w500-h666-b0-p0--farmhouse-bathroom.jpg",
-        "style": "farmhouse",
-        "category": "bathroom"
-    },
-    {
-        "src": "https://st.hzcdn.com/fimgs/94b10e0e091c5990_4541-w500-h400-b0-p0--farmhouse-sunroom.jpg",
-        "style": "farmhouse",
-        "category": "sunroom"
-    },
-    {
-        "src": "https://st.hzcdn.com/fimgs/ed319b6b04f70ad2_0920-w500-h400-b0-p0--asian-landscape.jpg",
-        "style": "asian",
+        "src": "https://st.hzcdn.com/fimgs/aee1f68801812530_1542-w500-h400-b0-p0-q80--shabby-chic-style-landscape.jpg",
+        "style": "shabby-chic-style",
         "category": "landscape"
     },
     {
-        "src": "https://st.hzcdn.com/fimgs/b9d19c4509357890_7610-w500-h400-b0-p0--asian-bathroom.jpg",
-        "style": "asian",
-        "category": "bathroom"
+        "src": "https://st.hzcdn.com/fimgs/c9e18b950c73fed7_6967-w500-h666-b0-p0-q80--shabby-chic-style-dining-room.jpg",
+        "style": "shabby-chic-style",
+        "category": "dining-room"
     },
     {
-        "src": "https://st.hzcdn.com/fimgs/a0014b1100d1cab0_6199-w500-h666-b0-p0--asian-kitchen.jpg",
-        "style": "asian",
-        "category": "kitchen"
-    },
-    {
-        "src": "https://st.hzcdn.com/fimgs/61d1f4c00910c7b0_9625-w500-h666-b0-p0--asian-home-office.jpg",
-        "style": "asian",
-        "category": "home-office"
-    },
-    {
-        "src": "https://st.hzcdn.com/fimgs/fff13e5104f70b41_0919-w500-h400-b0-p0--asian-landscape.jpg",
-        "style": "asian",
+        "src": "https://st.hzcdn.com/fimgs/4f51c97103a00df7_0326-w500-h400-b0-p0-q80--shabby-chic-style-landscape.jpg",
+        "style": "shabby-chic-style",
         "category": "landscape"
     },
     {
-        "src": "https://st.hzcdn.com/fimgs/a671d36406d38319_9499-w500-h400-b0-p0--asian-landscape.jpg",
-        "style": "asian",
+        "src": "https://st.hzcdn.com/fimgs/c101aabe094d8926_8271-w500-h400-b0-p0-q80--shabby-chic-style-bedroom.jpg",
+        "style": "shabby-chic-style",
+        "category": "bedroom"
+    },
+    {
+        "src": "https://st.hzcdn.com/fimgs/5421b43d0265a568_1270-w500-h400-b0-p0-q80--shabby-chic-style-landscape.jpg",
+        "style": "shabby-chic-style",
         "category": "landscape"
     },
     {
-        "src": "https://st.hzcdn.com/fimgs/3de19c5c01f02abe_4740-w500-h400-b0-p0--asian-bathroom.jpg",
-        "style": "asian",
+        "src": "https://st.hzcdn.com/fimgs/7651a82400ef0ca9_7653-w500-h666-b0-p0-q80--shabby-chic-style-bathroom.jpg",
+        "style": "shabby-chic-style",
         "category": "bathroom"
     },
     {
-        "src": "https://st.hzcdn.com/fimgs/7b712025094c4d0a_4419-w500-h400-b0-p0--asian-entry.jpg",
-        "style": "asian",
-        "category": "entry"
+        "src": "https://st.hzcdn.com/fimgs/cc310d480bbb5f0b_0845-w500-h666-b0-p0-q80--shabby-chic-style-living-room.jpg",
+        "style": "shabby-chic-style",
+        "category": "living-room"
     },
     {
         "src": "https://st.hzcdn.com/fimgs/4e11b4a108b0a6ce_5868-w500-h400-b0-p0--rustic-bathroom.jpg",
@@ -165,6 +120,166 @@
         "category": "bathroom"
     },
     {
+        "src": "https://st.hzcdn.com/fimgs/8761cbd6090ce4ed_3645-w500-h400-b0-p0--midcentury-dining-room.jpg",
+        "style": "midcentury",
+        "category": "dining-room"
+    },
+    {
+        "src": "https://st.hzcdn.com/fimgs/91811c7f082745b4_2908-w500-h400-b0-p0--midcentury-kitchen.jpg",
+        "style": "midcentury",
+        "category": "kitchen"
+    },
+    {
+        "src": "https://st.hzcdn.com/fimgs/9051886408274592_2882-w500-h400-b0-p0--midcentury-dining-room.jpg",
+        "style": "midcentury",
+        "category": "dining-room"
+    },
+    {
+        "src": "https://st.hzcdn.com/fimgs/d261207108274585_2893-w500-h400-b0-p0--midcentury-deck.jpg",
+        "style": "midcentury",
+        "category": "deck"
+    },
+    {
+        "src": "https://st.hzcdn.com/fimgs/1b617b610827457f_2890-w500-h666-b0-p0--midcentury-deck.jpg",
+        "style": "midcentury",
+        "category": "deck"
+    },
+    {
+        "src": "https://st.hzcdn.com/fimgs/50b1a2a3082745ae_2905-w500-h666-b0-p0--midcentury-entry.jpg",
+        "style": "midcentury",
+        "category": "entry"
+    },
+    {
+        "src": "https://st.hzcdn.com/fimgs/5ab126590827456e_2886-w500-h400-b0-p0--midcentury-entry.jpg",
+        "style": "midcentury",
+        "category": "entry"
+    },
+    {
+        "src": "https://st.hzcdn.com/fimgs/04214e3108274576_2889-w500-h400-b0-p0--midcentury-exterior.jpg",
+        "style": "midcentury",
+        "category": "exterior"
+    },
+    {
+        "src": "https://st.hzcdn.com/fimgs/c31195820827458b_2895-w500-h400-b0-p0--modern-kitchen.jpg",
+        "style": "modern",
+        "category": "kitchen"
+    },
+    {
+        "src": "https://st.hzcdn.com/fimgs/1dc1aead082745a3_2901-w500-h400-b0-p0--modern-bathroom.jpg",
+        "style": "modern",
+        "category": "bathroom"
+    },
+    {
+        "src": "https://st.hzcdn.com/fimgs/5bb1c55308274599_2898-w500-h400-b0-p0--modern-living-room.jpg",
+        "style": "modern",
+        "category": "living-room"
+    },
+    {
+        "src": "https://st.hzcdn.com/fimgs/7371f4f805ec979d_0984-w500-h666-b0-p0--modern-landscape.jpg",
+        "style": "modern",
+        "category": "landscape"
+    },
+    {
+        "src": "https://st.hzcdn.com/fimgs/26d1a56604bed6bf_2443-w500-h400-b0-p0--modern-patio.jpg",
+        "style": "modern",
+        "category": "patio"
+    },
+    {
+        "src": "https://st.hzcdn.com/fimgs/bf21f70b09661f15_2888-w500-h400-b0-p0--modern-exterior.jpg",
+        "style": "modern",
+        "category": "exterior"
+    },
+    {
+        "src": "https://st.hzcdn.com/fimgs/0861bccf05bbf571_1490-w500-h400-b0-p0--modern-landscape.jpg",
+        "style": "modern",
+        "category": "landscape"
+    },
+    {
+        "src": "https://st.hzcdn.com/fimgs/a7215c32067af862_6489-w500-h400-b0-p0--modern-landscape.jpg",
+        "style": "modern",
+        "category": "landscape"
+    },
+    {
+        "src": "https://st.hzcdn.com/fimgs/31011d3c0939b72b_4536-w500-h400-b0-p0--contemporary-bathroom.jpg",
+        "style": "contemporary",
+        "category": "bathroom"
+    },
+    {
+        "src": "https://st.hzcdn.com/fimgs/7451764e0919fb71_1689-w500-h400-b0-p0--contemporary-kitchen.jpg",
+        "style": "contemporary",
+        "category": "kitchen"
+    },
+    {
+        "src": "https://st.hzcdn.com/fimgs/ce4198e60919fbac_1826-w500-h400-b0-p0--contemporary-kitchen.jpg",
+        "style": "contemporary",
+        "category": "kitchen"
+    },
+    {
+        "src": "https://st.hzcdn.com/fimgs/a7017599091c91c1_6962-w500-h666-b0-p0--contemporary-closet.jpg",
+        "style": "contemporary",
+        "category": "closet"
+    },
+    {
+        "src": "https://st.hzcdn.com/fimgs/7ed12580092dddad_9130-w500-h666-b0-p0--contemporary-kitchen.jpg",
+        "style": "contemporary",
+        "category": "kitchen"
+    },
+    {
+        "src": "https://st.hzcdn.com/fimgs/3c517c1f090cc4ab_2014-w500-h400-b0-p0--contemporary-kitchen.jpg",
+        "style": "contemporary",
+        "category": "kitchen"
+    },
+    {
+        "src": "https://st.hzcdn.com/fimgs/07315cfb0912348f_0677-w500-h400-b0-p0--contemporary-bedroom.jpg",
+        "style": "contemporary",
+        "category": "bedroom"
+    },
+    {
+        "src": "https://st.hzcdn.com/fimgs/2b51732909094d0b_2252-w500-h666-b0-p0--contemporary-bedroom.jpg",
+        "style": "contemporary",
+        "category": "bedroom"
+    },
+    {
+        "src": "https://st.hzcdn.com/fimgs/a5813ffb08be1fbf_1208-w500-h400-b0-p0-q80--scandinavian-kitchen.jpg",
+        "style": "scandinavian",
+        "category": "kitchen"
+    },
+    {
+        "src": "https://st.hzcdn.com/fimgs/b231ee8f038b1740_7926-w500-h400-b0-p0-q80--scandinavian-kitchen.jpg",
+        "style": "scandinavian",
+        "category": "kitchen"
+    },
+    {
+        "src": "https://st.hzcdn.com/fimgs/3591f26d08ac4e60_4735-w500-h400-b0-p0-q80--scandinavian-dining-room.jpg",
+        "style": "scandinavian",
+        "category": "dining-room"
+    },
+    {
+        "src": "https://st.hzcdn.com/fimgs/5c11f050093efd20_8734-w500-h666-b0-p0-q80--scandinavian-family-room.jpg",
+        "style": "scandinavian",
+        "category": "family-room"
+    },
+    {
+        "src": "https://st.hzcdn.com/fimgs/3fd165cf08ac4e47_4722-w500-h400-b0-p0-q80--scandinavian-living-room.jpg",
+        "style": "scandinavian",
+        "category": "living-room"
+    },
+    {
+        "src": "https://st.hzcdn.com/fimgs/1a5147f903541100_5122-w500-h666-b0-p0-q80--scandinavian-hall.jpg",
+        "style": "scandinavian",
+        "category": "hall"
+    },
+    {
+        "src": "https://st.hzcdn.com/fimgs/4381461a09407b04_6326-w500-h666-b0-p0-q80--scandinavian-bathroom.jpg",
+        "style": "scandinavian",
+        "category": "bathroom"
+    },
+    {
+        "src": "https://st.hzcdn.com/fimgs/c391fc56064ba5a8_9013-w500-h400-b0-p0-q80--scandinavian-family-room.jpg",
+        "style": "scandinavian",
+        "category": "family-room"
+    },
+    {
         "src": "https://st.hzcdn.com/fimgs/0e210ca208852969_1084-w500-h400-b0-p0--mediterranean-bathroom.jpg",
         "style": "mediterranean",
         "category": "bathroom"
@@ -205,83 +320,83 @@
         "category": "landscape"
     },
     {
-        "src": "https://st.hzcdn.com/fimgs/4f61f4cc04d37ab0_4825-w500-h666-b0-p0--victorian-bathroom.jpg",
-        "style": "victorian",
-        "category": "bathroom"
-    },
-    {
-        "src": "https://st.hzcdn.com/fimgs/2691a34401251273_5313-w500-h666-b0-p0--victorian-entry.jpg",
-        "style": "victorian",
-        "category": "entry"
-    },
-    {
-        "src": "https://st.hzcdn.com/fimgs/89a16c8b08f78aa0_6472-w500-h666-b0-p0--victorian-closet.jpg",
-        "style": "victorian",
-        "category": "closet"
-    },
-    {
-        "src": "https://st.hzcdn.com/fimgs/dc81637408d15131_6564-w500-h400-b0-p0--victorian-kitchen.jpg",
-        "style": "victorian",
+        "src": "https://st.hzcdn.com/fimgs/64b1594d0956d05f_3687-w500-h400-b0-p0-q80--farmhouse-kitchen.jpg",
+        "style": "farmhouse",
         "category": "kitchen"
     },
     {
-        "src": "https://st.hzcdn.com/fimgs/1b61371b03e1ec15_9627-w500-h400-b0-p0--victorian-kitchen.jpg",
-        "style": "victorian",
+        "src": "https://st.hzcdn.com/fimgs/1931e9240956d079_3671-w500-h400-b0-p0-q80--farmhouse-kitchen.jpg",
+        "style": "farmhouse",
         "category": "kitchen"
     },
     {
-        "src": "https://st.hzcdn.com/fimgs/aed1b6f70f6e0f81_2684-w500-h666-b0-p0--victorian-powder-room.jpg",
-        "style": "victorian",
-        "category": "powder-room"
+        "src": "https://st.hzcdn.com/fimgs/e6a10d1c053ff147_0863-w500-h400-b0-p0-q80--farmhouse-landscape.jpg",
+        "style": "farmhouse",
+        "category": "landscape"
     },
     {
-        "src": "https://st.hzcdn.com/fimgs/c1611bc2010ff277_9798-w500-h400-b0-p0--victorian-kitchen.jpg",
-        "style": "victorian",
-        "category": "kitchen"
+        "src": "https://st.hzcdn.com/fimgs/a781bc8a009d3cb1_3376-w500-h400-b0-p0-q80--farmhouse-patio.jpg",
+        "style": "farmhouse",
+        "category": "patio"
     },
     {
-        "src": "https://st.hzcdn.com/fimgs/ab11ce2603c8b4b6_3795-w500-h400-b0-p0--victorian-kitchen.jpg",
-        "style": "victorian",
-        "category": "kitchen"
+        "src": "https://st.hzcdn.com/fimgs/86e18ed105503946_9253-w500-h400-b0-p0-q80--farmhouse-exterior.jpg",
+        "style": "farmhouse",
+        "category": "exterior"
     },
     {
-        "src": "https://st.hzcdn.com/fimgs/a5813ffb08be1fbf_1208-w500-h400-b0-p0--scandinavian-kitchen.jpg",
-        "style": "scandinavian",
-        "category": "kitchen"
-    },
-    {
-        "src": "https://st.hzcdn.com/fimgs/b231ee8f038b1740_7926-w500-h400-b0-p0--scandinavian-kitchen.jpg",
-        "style": "scandinavian",
-        "category": "kitchen"
-    },
-    {
-        "src": "https://st.hzcdn.com/fimgs/3591f26d08ac4e60_4735-w500-h400-b0-p0--scandinavian-dining-room.jpg",
-        "style": "scandinavian",
+        "src": "https://st.hzcdn.com/fimgs/6ef1a6780510e446_4474-w500-h400-b0-p0-q80--farmhouse-dining-room.jpg",
+        "style": "farmhouse",
         "category": "dining-room"
     },
     {
-        "src": "https://st.hzcdn.com/fimgs/5c11f050093efd20_8734-w500-h666-b0-p0--scandinavian-family-room.jpg",
-        "style": "scandinavian",
-        "category": "family-room"
-    },
-    {
-        "src": "https://st.hzcdn.com/fimgs/3fd165cf08ac4e47_4722-w500-h400-b0-p0--scandinavian-living-room.jpg",
-        "style": "scandinavian",
-        "category": "living-room"
-    },
-    {
-        "src": "https://st.hzcdn.com/fimgs/1a5147f903541100_5122-w500-h666-b0-p0--scandinavian-hall.jpg",
-        "style": "scandinavian",
-        "category": "hall"
-    },
-    {
-        "src": "https://st.hzcdn.com/fimgs/4381461a09407b04_6326-w500-h666-b0-p0--scandinavian-bathroom.jpg",
-        "style": "scandinavian",
+        "src": "https://st.hzcdn.com/fimgs/77d1b5d507714825_0725-w500-h666-b0-p0-q80--farmhouse-bathroom.jpg",
+        "style": "farmhouse",
         "category": "bathroom"
     },
     {
-        "src": "https://st.hzcdn.com/fimgs/c391fc56064ba5a8_9013-w500-h400-b0-p0--scandinavian-family-room.jpg",
-        "style": "scandinavian",
-        "category": "family-room"
+        "src": "https://st.hzcdn.com/fimgs/94b10e0e091c5990_4541-w500-h400-b0-p0-q80--farmhouse-sunroom.jpg",
+        "style": "farmhouse",
+        "category": "sunroom"
+    },
+    {
+        "src": "https://st.hzcdn.com/fimgs/ed319b6b04f70ad2_0920-w500-h400-b0-p0--asian-landscape.jpg",
+        "style": "asian",
+        "category": "landscape"
+    },
+    {
+        "src": "https://st.hzcdn.com/fimgs/b9d19c4509357890_7610-w500-h400-b0-p0--asian-bathroom.jpg",
+        "style": "asian",
+        "category": "bathroom"
+    },
+    {
+        "src": "https://st.hzcdn.com/fimgs/a0014b1100d1cab0_6199-w500-h666-b0-p0--asian-kitchen.jpg",
+        "style": "asian",
+        "category": "kitchen"
+    },
+    {
+        "src": "https://st.hzcdn.com/fimgs/61d1f4c00910c7b0_9625-w500-h666-b0-p0--asian-home-office.jpg",
+        "style": "asian",
+        "category": "home-office"
+    },
+    {
+        "src": "https://st.hzcdn.com/fimgs/fff13e5104f70b41_0919-w500-h400-b0-p0--asian-landscape.jpg",
+        "style": "asian",
+        "category": "landscape"
+    },
+    {
+        "src": "https://st.hzcdn.com/fimgs/a671d36406d38319_9499-w500-h400-b0-p0--asian-landscape.jpg",
+        "style": "asian",
+        "category": "landscape"
+    },
+    {
+        "src": "https://st.hzcdn.com/fimgs/3de19c5c01f02abe_4740-w500-h400-b0-p0--asian-bathroom.jpg",
+        "style": "asian",
+        "category": "bathroom"
+    },
+    {
+        "src": "https://st.hzcdn.com/fimgs/7b712025094c4d0a_4419-w500-h400-b0-p0--asian-entry.jpg",
+        "style": "asian",
+        "category": "entry"
     }
 ]
