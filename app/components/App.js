@@ -9,7 +9,6 @@ class App extends Component {
   render() {
     return (
       <div>
-        Hi, I'm components/App.js
         <Header />
         <Route exact
                path='/'
