@@ -3,7 +3,7 @@ import { Route } from 'react-router-dom';
 import Header from './Header';
 import Home from './Home';
 import MainContainer from '../containers/MainContainer';
-import StylesComparisonContainer from '../containers/StylesComparisonContainer';
+import StylesCompContainer from '../containers/StylesCompContainer';
 
 class App extends Component {
   render() {
@@ -15,7 +15,7 @@ class App extends Component {
                component={Home} />
         <Route exact
                path='/styles'
-               component={StylesComparisonContainer} />
+               component={StylesCompContainer} />
         <Route exact
                path='/favorites'
                component={MainContainer} />

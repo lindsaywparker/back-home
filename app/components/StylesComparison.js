@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const StylesComparison = () => {
-  return (
-    <div>
-      Hi, I'm StylesComparison
-    </div>
-  );
-};
+export default class StylesComparison extends Component {
+  componentDidMount() {
+    this.props.fetchImages();
+  }
 
-export default StylesComparison;
+  render() {
+    return (
+      <div>
+        Hi, I'm StylesComparison
+      </div>
+    );
+  }
+}
