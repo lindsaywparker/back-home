@@ -67,3 +67,24 @@ body {
 .favorites:hover {
   background: no-repeat center/cover url('../favorites-background-hover.jpg');
 }*/
+
+.styles-matrix {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  align-content: space-around;
+  justify-content: space-around;
+  padding: 50px;
+}
+
+.styles-matrix div {
+  margin: 10px auto;
+  text-align: center;
+}
+
+.image {
+  width: 300px;
+  height: 300px;
+  border: 3px solid #E5E5E5;
+  box-shadow: 3px 3px 5px #E5E5E5;
+  object-fit: cover;
+}
