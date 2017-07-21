@@ -12,7 +12,7 @@ export default class StylesComparison extends Component {
     });
 
     return (
-      <div>
+      <div className='styles-matrix'>
         {stylesMatrix}
       </div>
     );
