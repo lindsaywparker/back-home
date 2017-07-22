@@ -7,3 +7,13 @@ export const images = (state = [], action) => {
       return state;
   }
 };
+
+export const isLoading = (state = true, action) => {
+  switch (action.type) {
+    case 'IS_LOADING':
+      return action.isLoading;
+
+    default:
+      return state;
+  }
+};

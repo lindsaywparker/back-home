@@ -5,6 +5,7 @@ import { fetchImagesAction } from '../actions/images';
 const mapStateToProps = (state) => {
   return {
     images: state.images,
+    isLoading: state.isLoading,
   };
 };
 
