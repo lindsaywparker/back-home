@@ -24,7 +24,6 @@ export default class StylesComparison extends Component {
     }, {});
 
     const imageCells = Object.keys(randomImagesObj);
-
     const content = this.props.isLoading ?
       <img className='loader' src='../assets/loader.gif' alt='Loading...' /> :
       <div className='styles-matrix'>

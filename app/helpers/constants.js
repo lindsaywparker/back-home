@@ -18,7 +18,6 @@ export const CATEGORIES = [
   'living-room',
   'kitchen',
   'dining-room',
-  // 'Pendant Lights',
-  // 'Armchairs & Accent Chairs',
-  // 'Decorative Accents',
+  'pendant-lighting',
+  'armchairs-and-accent-chairs',
 ];
