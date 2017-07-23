@@ -1,11 +1,18 @@
-import React from 'react';
+import React, { Component } from 'react';
+import PageInfo from './PageInfo';
+import ImagesList from './ImagesList';
 
-const Main = () => {
-  return (
-    <div>
-      Hi, I'm Main
-    </div>
-  );
-};
+export default class Main extends Component {
+  componentDidMount() {
+    if (!this.props.images.length) this.props.fetchImages();
+  }
 
-export default Main;
+  render() {
+    return (
+      <div>
+        <PageInfo />
+        <ImagesList isLoading={this.props.isLoading} images={this.props.images}/>
+      </div>
+    );
+  }
+}
