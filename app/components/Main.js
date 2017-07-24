@@ -8,10 +8,15 @@ export default class Main extends Component {
   }
 
   render() {
+    const path = location.pathname.substring(1);
+    const pageImages = path === 'favorites' ?
+      this.props.images.filter(image => image.favorite) :
+      this.props.images.filter(image => image.style === path);
+
     return (
       <div>
         <PageInfo />
-        <ImagesList isLoading={this.props.isLoading} images={this.props.images}/>
+        <ImagesList isLoading={this.props.isLoading} images={pageImages}/>
       </div>
     );
   }
