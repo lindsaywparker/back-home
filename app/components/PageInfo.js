@@ -13,7 +13,11 @@ const PageInfo = () => {
 
   switch (location.pathname) {
     case '/styles':
-      content = <h2>STYLES</h2>;
+      content =
+        <container>
+          <h2>STYLES</h2>
+          <p className='fav-style'>Awesome info about this page</p>
+        </container>;
       break;
     case '/favorites':
       // {} = calculateStyle();
@@ -39,7 +43,11 @@ const PageInfo = () => {
         </container>;
       break;
     default:
-      content = <div></div>;
+      content =
+        <container>
+          <h2>{location.pathname.substring(1).toUpperCase()}</h2>
+          <p className='fav-style'>Awesome info about this style</p>
+        </container>;
   }
 
   return (
