@@ -1,16 +1,18 @@
 import React from 'react';
 import Image from './Image';
-
+import { NavLink } from 'react-router-dom';
 
 const ImageSlider = ({ images, style }) => {
   const catKeys = Object.keys(images);
-  const slider = catKeys.map((category, i) => {
-    return <Image key={i} category={category} src={images[category]} />;
-  });
+  const slider = catKeys.map((category, i) =>
+    <Image key={i} category={category} src={images[category]} />,
+  );
 
   return (
     <div className='title-and-slider'>
-      <div className='slider-title'>{style}</div>
+      <NavLink to={`/${style}`}>
+        <div className='slider-title'>{style}</div>
+      </NavLink>
       <div className='image-slider'>
         {slider}
       </div>
