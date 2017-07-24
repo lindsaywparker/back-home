@@ -45,7 +45,7 @@ const PageInfo = () => {
     default:
       content =
         <container>
-          <h2>{location.pathname.substring(1).toUpperCase()}</h2>
+          <h2>{location.pathname.substring(7).toUpperCase()}</h2>
           <p className='fav-style'>Awesome info about this style</p>
         </container>;
   }

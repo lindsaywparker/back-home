@@ -8,10 +8,9 @@ export default class Main extends Component {
   }
 
   render() {
-    const path = location.pathname.substring(1);
-    const pageImages = path === 'favorites' ?
+    const pageImages = location.pathname === '/favorites' ?
       this.props.images.filter(image => image.favorite) :
-      this.props.images.filter(image => image.style === path);
+      this.props.images.filter(image => image.style === location.pathname.substring(7));
 
     return (
       <div>
