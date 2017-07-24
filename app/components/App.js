@@ -21,8 +21,8 @@ class App extends Component {
                component={MainContainer} />
         <Route path='/style/:style'
                component={MainContainer} />
-        {/* <Route path='/all/:category'
-                   render={() => <Main />} /> */}
+        <Route path='/all/:category'
+               component={MainContainer} />
       </div>
     );
   }

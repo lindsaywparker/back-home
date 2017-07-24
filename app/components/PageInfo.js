@@ -1,6 +1,6 @@
 import React from 'react';
 
-const PageInfo = () => {
+const PageInfo = ({ title }) => {
   const firstStyleName = 'Modern';
   const secondStyleName = 'Contemporary';
   const thirdStyleName = 'Traditional';
@@ -45,7 +45,7 @@ const PageInfo = () => {
     default:
       content =
         <container>
-          <h2>{location.pathname.substring(7).toUpperCase()}</h2>
+          <h2>{title.toUpperCase()}</h2>
           <p className='fav-style'>Awesome info about this style</p>
         </container>;
   }
