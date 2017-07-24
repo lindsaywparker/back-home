@@ -8,6 +8,10 @@ body {
   font-weight: 100;
 }
 
+a {
+  text-decoration: none;
+}
+
 .header {
   height: 10vh;
   padding: 10px;
@@ -17,7 +21,6 @@ body {
 
 .header a {
   color: #FFF;
-  text-decoration: none;
 }
 
 .home {
@@ -69,6 +72,8 @@ body {
   align-content: space-around;
   justify-content: space-around;
   padding: 50px;*/
+  background-color: #E5E5E5;
+  padding: 50px;
 }
 
 .styles-matrix div {
@@ -77,7 +82,7 @@ body {
 
 .title-and-slider {
   display: flex;
-  margin: 20px;
+  margin: 20px 0;
 }
 
 .image-slider {
@@ -87,7 +92,12 @@ body {
 }
 
 .slider-title {
-  width: 115px;
+  width: 300px;
+  padding-top: 150px;
+  color: #323232;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
 }
 
 .page-info {
@@ -138,6 +148,7 @@ body {
   width: 300px;
   height: 300px;
   border: 2px solid #FFF;
+  margin: 0 10px;
   box-shadow: 3px 3px 5px #727272;
   object-fit: cover;
 }

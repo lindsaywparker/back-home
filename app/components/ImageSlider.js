@@ -10,9 +10,7 @@ const ImageSlider = ({ images, style }) => {
 
   return (
     <div className='title-and-slider'>
-      <NavLink to={`/${style}`}>
-        <div className='slider-title'>{style}</div>
-      </NavLink>
+      <NavLink to={`/${style}`} className='slider-title'>{style.toUpperCase()}</NavLink>
       <div className='image-slider'>
         {slider}
       </div>
