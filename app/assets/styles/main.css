@@ -64,16 +64,30 @@ body {
 }
 
 .styles-matrix {
-  display: grid;
+  /*display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   align-content: space-around;
   justify-content: space-around;
-  padding: 50px;
+  padding: 50px;*/
 }
 
 .styles-matrix div {
-  margin: 10px auto;
   text-align: center;
+}
+
+.title-and-slider {
+  display: flex;
+  margin: 20px;
+}
+
+.image-slider {
+  display: flex;
+  width: 90vw;
+  overflow: scroll;
+}
+
+.slider-title {
+  width: 115px;
 }
 
 .page-info {
