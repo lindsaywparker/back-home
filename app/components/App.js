@@ -16,7 +16,10 @@ class App extends Component {
         <Route exact
                path='/styles'
                component={StylesCompContainer} />
-        <Route path='/:style'
+        <Route exact
+               path='/favorites'
+               component={MainContainer} />
+        <Route path='/style/:style'
                component={MainContainer} />
         {/* <Route path='/all/:category'
                    render={() => <Main />} /> */}
