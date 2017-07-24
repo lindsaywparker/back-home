@@ -1,7 +1,8 @@
 export const images = (state = [], action) => {
   switch (action.type) {
     case 'IMAGES_FETCH_SUCCESS':
-      return [...action.images];
+      const keys = Object.keys(action.images);
+      return keys.map(key => action.images[key]);
 
     default:
       return state;
