@@ -24,9 +24,9 @@ const categories = [
   'pendant-lighting',
   'armchairs-and-accent-chairs',
 ];
-const parsedResults = [];
+const parsedResults = JSON.parse(fs.readFileSync('src/helpers/results.json'), 'utf8');
 
-[...styles, ...categories].forEach((style) => {
+styles.forEach((style) => {
   request(`https://www.houzz.com/photos/${style}`, (error, response, html) => {
     if (error) { console.log(`Error: ${error}`); }
 
@@ -36,56 +36,43 @@ const parsedResults = [];
 
     $('div.imageArea').each(function (index) {
       const src = $(this).find('img.hide-context').attr('src');
+      const sid = $(this).find('img.hide-context').attr('sid');
       const startIndex = src.indexOf(`${style}-`) !== -1 ? src.indexOf(`${style}-`) + style.length + 1 : -1;
       const endIndex = src.indexOf('.jpg');
       const category = src.slice(startIndex, endIndex);
-      const json = {
-        src,
-        style,
-        category,
-      };
 
       if (src.indexOf(style) !== -1) {
-        console.log(src);
-        parsedResults.push(json);
+        parsedResults[sid] = {
+          src,
+          style,
+          category,
+        };
       }
     });
-    fs.writeFile('src/helpers/results.json', JSON.stringify(parsedResults, null, 4));
+  });
+
+  categories.forEach((category) => {
+    request(`https://www.houzz.com/photos/${style}/${category}`, (error, response, html) => {
+      if (error) { console.log(`Error: ${error}`); }
+
+      console.log(`Status code: ${response.statusCode}`);
+
+      const $ = cheerio.load(html);
+
+      $('.imageArea').each(function (index) {
+        const src = $(this).find('img.hide-context').attr('src');
+        const sid = $(this).find('img.hide-context').attr('sid');
+
+        if (src.indexOf('data') === -1) {
+          parsedResults[sid] = {
+            src,
+            style,
+            category,
+          };
+        }
+      });
+      fs.writeFile('src/helpers/results.json', JSON.stringify(parsedResults, null, 4));
+    });
   });
 });
 
-// function scrape(iterator) {
-//   iterator.forEach((element) => {
-//     request(`https://www.houzz.com/photos/${element}`, (error, response, html) => {
-//       if (error) { console.log(`Error: ${error}`); }
-//
-//       console.log(`Status code: ${response.statusCode}`);
-//
-//       const $ = cheerio.load(html);
-//
-//       $('div.imageArea').each(function (index) {
-//         const src = $(this).find('img.hide-context').attr('src');
-//         // const startIndex = src.indexOf(`${style}-`) !== -1 ? src.indexOf(`${style}-`) + style.length + 1 : -1;
-//         // const endIndex = src.indexOf('.jpg');
-//         // const category = src.slice(startIndex, endIndex);
-//         const json = {
-//           src,
-//           // style,
-//           // category,
-//         };
-//
-//         if (src.indexOf(element) !== -1) {
-//           resultsArray.push(json);
-//         }
-//
-//         return resultsArray;
-//       });
-//     });
-//   });
-// }
-// const parsedStyles = scrape(styles);
-// console.log('hi', parsedStyles);
-// const parsedCategories = scrape(categories);
-//
-//
-// fs.writeFile('src/helpers/results2.json', JSON.stringify([...parsedStyles, ...parsedCategories], null, 4));
