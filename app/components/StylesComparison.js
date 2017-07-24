@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Image from './Image';
+import ImageSlider from './ImageSlider';
+import PageInfo from './PageInfo';
 import { STYLES, CATEGORIES } from '../helpers/constants';
 
 export default class StylesComparison extends Component {
@@ -8,8 +9,8 @@ export default class StylesComparison extends Component {
   }
 
   render() {
-    const randomImagesObj = STYLES.reduce((acc, style) => {
-      CATEGORIES.forEach((category) => {
+    const randomImagesObj = STYLES.reduce((styleAcc, style) => {
+      styleAcc[style] = CATEGORIES.reduce((catAcc, category) => {
         const array = this.props.images.filter((image) => {
           return (image.style === style && image.category === category);
         });
@@ -17,22 +18,22 @@ export default class StylesComparison extends Component {
           array[Math.floor(Math.random() * array.length)].src :
           '../assets/no-image-found.jpg';
 
-        Object.assign(acc, { [`${style}-${category}`]: randomImageSrc });
-      });
+        catAcc[category] = randomImageSrc;
+        return catAcc;
+      }, {});
 
-      return acc;
+      return styleAcc;
     }, {});
 
-    const imageCells = Object.keys(randomImagesObj);
     const content = this.props.isLoading ?
       <img className='loader' src='../assets/loader.gif' alt='Loading...' /> :
-      <div className='styles-matrix'>
-        {imageCells.map((key, i) =>
-          <article key={i}>
-            <p>{key}</p>
-            <Image src={randomImagesObj[key]} />
-          </article>,
-        )}
+      <div>
+        <PageInfo location={location}/>
+        <div className='styles-matrix'>
+          {STYLES.map((style, i) =>
+            <ImageSlider key={i} images={randomImagesObj[style]} style={style} />,
+          )}
+        </div>;
       </div>;
 
     return (
