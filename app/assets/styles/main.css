@@ -93,6 +93,7 @@ a {
 
 .slider-title {
   width: 300px;
+  min-width: 300px;
   padding-top: 150px;
   color: #323232;
   font-size: 20px;
@@ -151,6 +152,10 @@ a {
   margin: 0 10px;
   box-shadow: 3px 3px 5px #727272;
   object-fit: cover;
+}
+
+.see-more {
+  color: #323232;
 }
 
 @media screen and (min-width: 600px) {
