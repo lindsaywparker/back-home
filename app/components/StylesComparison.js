@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { NavLink } from 'react-router-dom';
 import ImageSlider from './ImageSlider';
 import PageInfo from './PageInfo';
 import { STYLES, CATEGORIES } from '../helpers/constants';
@@ -33,12 +34,14 @@ export default class StylesComparison extends Component {
           {STYLES.map((style, i) =>
             <ImageSlider key={i} images={randomImagesObj[style]} style={style} />,
           )}
-        </div>;
+        </div>
       </div>;
 
     return (
       <div>
         {content}
+        <h3>See more</h3>
+        {CATEGORIES.map(category => <NavLink to={`/all/${category}`} className='slider-title see-more-category'>{category.toUpperCase()}</NavLink>)}
       </div>
     );
   }
