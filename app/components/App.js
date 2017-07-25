@@ -19,9 +19,13 @@ class App extends Component {
         <Route exact
                path='/favorites'
                component={MainContainer} />
-        <Route path='/style/:style'
+        <Route exact
+               path='/styles/:style'
                component={MainContainer} />
-        <Route path='/all/:category'
+        <Route exact
+               path='/styles/all/:category'
+               component={MainContainer} />
+        <Route path='/styles/:style/:category'
                component={MainContainer} />
       </div>
     );

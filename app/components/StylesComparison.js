@@ -41,7 +41,7 @@ export default class StylesComparison extends Component {
       <div>
         {content}
         <h3>See more</h3>
-        {CATEGORIES.map((category, i) => <NavLink to={`/all/${category}`} key={i} className='slider-title see-more-category'>{category.toUpperCase()}</NavLink>)}
+        {CATEGORIES.map((category, i) => <NavLink to={`/styles/all/${category}`} key={i} className='slider-title see-more-category'>{category.toUpperCase()}</NavLink>)}
       </div>
     );
   }
