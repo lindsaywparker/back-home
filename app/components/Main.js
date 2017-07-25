@@ -29,8 +29,9 @@ export default class Main extends Component {
 
     return (
       <div>
-        <PageInfo title={value}/>
-        <ImagesList isLoading={this.props.isLoading} images={pageImages}/>
+        <PageInfo title={value} />
+        <ImagesList isLoading={this.props.isLoading}
+                    images={pageImages} />
       </div>
     );
   }

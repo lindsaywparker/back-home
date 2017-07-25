@@ -21,3 +21,23 @@ export const CATEGORIES = [
   'pendant-lighting',
   'armchairs-and-accent-chairs',
 ];
+export const DISPLAY_NAME = {
+  contemporary: 'Contemporary',
+  modern: 'Modern',
+  asian: 'Asian',
+  craftsman: 'Craftsman',
+  farmhouse: 'Farmhouse',
+  industrial: 'Industrial',
+  mediterranean: 'Mediterranean',
+  midcentury: 'Midcentury',
+  rustic: 'Rustic',
+  scandinavian: 'Scandinavian',
+  'shabby-chic-style': 'Shabby Chic',
+  victorian: 'Victorian',
+  exterior: 'Exterior',
+  'living-room': 'Living Room',
+  kitchen: 'Kitchen',
+  'dining-room': 'Dining Room',
+  'pendant-lighting': 'Pendant Lighting',
+  'armchairs-and-accent-chairs': 'Armchairs and Accent Chairs',
+};

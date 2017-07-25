@@ -19,7 +19,7 @@ const store = createStore(rootReducer,
 
 ReactDOM.render(
   <Provider store={store}>
-    <ConnectedRouter history={history} >
+    <ConnectedRouter history={history}>
       <App />
     </ConnectedRouter>
   </Provider>, document.getElementById('main'));
