@@ -1,10 +1,13 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
-const Image = ({ category, src }) => {
+const Image = ({ style, category, src }) => {
   return (
     <div>
-      <p className='category-name'>{category}</p>
-      <img className='image' src={src}/>
+      <NavLink to={`/${style}/${category}`}>
+        <p className='category-name'>{category}</p>
+        <img className='image' src={src}/>
+      </NavLink>
     </div>
   );
 };

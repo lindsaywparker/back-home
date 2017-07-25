@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 const ImageSlider = ({ images, style }) => {
   const catKeys = Object.keys(images);
   const slider = catKeys.map((category, i) =>
-    <Image key={i} category={category} src={images[category]} />,
+    <Image key={i} style={style} category={category} src={images[category]} />,
   );
 
   return (
