@@ -8,11 +8,24 @@ export default class Main extends Component {
   }
 
   render() {
-    const key = Object.keys(this.props.match.params)[0];
-    const value = this.props.match.params[key];
-    const pageImages = location.pathname === '/favorites' ?
-      this.props.images.filter(image => image.favorite) :
-      this.props.images.filter(image => image[key] === value);
+    let value;
+    let pageImages;
+
+    if (location.pathname === '/favorites') {
+      pageImages = this.props.images.filter(image => image.favorite);
+    } else {
+      const keys = Object.keys(this.props.match.params);
+      if (keys.length > 1) {
+        value = `${this.props.match.params[keys[0]]} ${this.props.match.params[keys[1]]}`;
+        pageImages = this.props.images.filter((image) => {
+          return image[keys[0]] === this.props.match.params[keys[0]] &&
+                 image[keys[1]] === this.props.match.params[keys[1]];
+        });
+      } else {
+        value = this.props.match.params[keys[0]];
+        pageImages = this.props.images.filter(image => image[keys[0]] === value);
+      }
+    }
 
     return (
       <div>

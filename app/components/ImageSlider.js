@@ -1,11 +1,11 @@
 import React from 'react';
-import Image from './Image';
+import RoutingImage from './RoutingImage';
 import { NavLink } from 'react-router-dom';
 
 const ImageSlider = ({ images, style }) => {
   const catKeys = Object.keys(images);
   const slider = catKeys.map((category, i) =>
-    <Image key={i} style={style} category={category} src={images[category]} />,
+    <RoutingImage key={i} style={style} category={category} src={images[category]} />,
   );
 
   return (
@@ -13,7 +13,7 @@ const ImageSlider = ({ images, style }) => {
       <h3 className='slider-title'>{style.toUpperCase()}</h3>
       <div className='image-slider'>
         {slider}
-        <NavLink to={`/style/${style}`} className='slider-title see-more'>
+        <NavLink to={`/styles/${style}`} className='slider-title see-more'>
           {`See more from ${style.toUpperCase()}`}
         </NavLink>
       </div>
