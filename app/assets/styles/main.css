@@ -83,11 +83,6 @@ a {
 }
 
 .styles-matrix {
-  /*display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  align-content: space-around;
-  justify-content: space-around;
-  padding: 50px;*/
   background-color: #E5E5E5;
   padding: 50px;
 }
@@ -123,7 +118,7 @@ a {
 }
 
 .image-slider::-webkit-scrollbar-thumb:hover {
-  background-color: #727272;
+  background-color: #959595;
 }
 
 .slider-title {
@@ -141,8 +136,6 @@ a {
 }
 
 .see-more-container {
-  /*display: flex;
-  flex-direction: column;*/
   margin-top: 15px;
 }
 
@@ -199,7 +192,8 @@ a {
   animation: fadein linear 300ms;
 }
 
-.images-list div {
+.image-with-favorite {
+  position: relative;
   margin: 10px auto;
   text-align: center;
 }
@@ -211,6 +205,28 @@ a {
   margin: 0 10px;
   box-shadow: 3px 3px 5px #727272;
   object-fit: cover;
+}
+
+.favorite-icon {
+  position: absolute;
+  bottom: 12px;
+  left: 18px;
+  width: 40px;
+  height: 40px;
+  background: no-repeat url('../favorite.svg');
+  cursor: pointer;
+}
+
+.favorite-icon:hover {
+  background: no-repeat url('../favorite-hover.svg');
+}
+
+.favorite-active {
+  background: no-repeat url('../favorite-active.svg');
+}
+
+.favorite-active:hover {
+  background: no-repeat url('../favorite-active-hover.svg');
 }
 
 .see-more {
@@ -268,7 +284,6 @@ a {
     width: 400px;
     height: 400px;
   }
-  
 }
 
 @keyframes fadein {
