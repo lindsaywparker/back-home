@@ -7,10 +7,8 @@ const ImageSlider = ({ images, style }) => {
   const categoryKeys = Object.keys(images);
   const slider = categoryKeys.map((category, i) =>
     <Image key={i}
-                  routing={true}
-                  style={style}
-                  category={category}
-                  src={images[category]} />,
+           routing={true}
+           image={images[category]} />,
   );
 
   return (

@@ -15,11 +15,12 @@ export default class StylesComparison extends Component {
         const array = this.props.images.filter((image) => {
           return (image.style === style && image.category === category);
         });
-        const randomImageSrc = array.length !== 0 ?
-          array[Math.floor(Math.random() * array.length)].src :
-          '../assets/no-image-found.jpg';
+        const randomImage = array.length !== 0 ?
+          array[Math.floor(Math.random() * array.length)]
+          :
+          { style, category, src: '../assets/no-image-found.jpg' };
 
-        catAcc[category] = randomImageSrc;
+        catAcc[category] = randomImage;
         return catAcc;
       }, {});
 
