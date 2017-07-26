@@ -29,7 +29,8 @@ export default class StylesComparison extends Component {
     const content = this.props.isLoading ?
       <div className='loader-container'>
         <img className='loader' src='../assets/loader.gif' alt='Loading...' />
-      </div> :
+      </div>
+      :
       <div>
         <div className='styles-matrix'>
           {STYLES.map((style, i) =>

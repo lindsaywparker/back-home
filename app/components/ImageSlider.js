@@ -1,12 +1,13 @@
 import React from 'react';
-import RoutingImage from './RoutingImage';
+import Image from './Image';
 import { NavLink } from 'react-router-dom';
 import { DISPLAY_NAME } from '../helpers/constants';
 
 const ImageSlider = ({ images, style }) => {
   const categoryKeys = Object.keys(images);
   const slider = categoryKeys.map((category, i) =>
-    <RoutingImage key={i}
+    <Image key={i}
+                  routing={true}
                   style={style}
                   category={category}
                   src={images[category]} />,
