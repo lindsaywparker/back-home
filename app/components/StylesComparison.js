@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import ImageSlider from './ImageSlider';
 import PageInfo from './PageInfo';
-import { STYLES, CATEGORIES } from '../helpers/constants';
+import { STYLES, CATEGORIES, DISPLAY_NAME } from '../helpers/constants';
 
 export default class StylesComparison extends Component {
   componentDidMount() {
@@ -27,21 +27,33 @@ export default class StylesComparison extends Component {
     }, {});
 
     const content = this.props.isLoading ?
-      <img className='loader' src='../assets/loader.gif' alt='Loading...' /> :
+      <div className='loader-container'>
+        <img className='loader' src='../assets/loader.gif' alt='Loading...' />
+      </div> :
       <div>
-        <PageInfo location={location}/>
         <div className='styles-matrix'>
           {STYLES.map((style, i) =>
-            <ImageSlider key={i} images={randomImagesObj[style]} style={style} />,
+            <ImageSlider key={i}
+                         images={randomImagesObj[style]}
+                         style={style} />,
           )}
+        </div>
+        <div className='comparison-footer'>
+          <h3>See more from</h3>
+          <div className='see-more-container'>
+            {CATEGORIES.map((category, i) =>
+              <NavLink to={`/styles/all/${category}`} key={i} className='see-more-category'>
+                {DISPLAY_NAME[category]}
+              </NavLink>,
+            )}
+          </div>
         </div>
       </div>;
 
     return (
       <div>
+        <PageInfo location={location} />
         {content}
-        <h3>See more</h3>
-        {CATEGORIES.map((category, i) => <NavLink to={`/styles/all/${category}`} key={i} className='slider-title see-more-category'>{category.toUpperCase()}</NavLink>)}
       </div>
     );
   }

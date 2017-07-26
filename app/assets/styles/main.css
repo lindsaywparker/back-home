@@ -6,6 +6,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 100;
+  min-height: 100vh;
 }
 
 a {
@@ -14,10 +15,18 @@ a {
 }
 
 .header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 10vh;
-  padding: 10px;
   background-color: #323232;
   font-family: 'Martel Sans', sans-serif;
+  text-align: center;
+}
+
+.header h1 {
+  margin-top: 10px;
+  line-height: 1.2;
 }
 
 .header a {
@@ -25,8 +34,8 @@ a {
 }
 
 .home {
-  min-height: 90vh;
   background: no-repeat center/cover url('../home-background.jpg');
+  min-height: 90vh;
 }
 
 .homepage-btns-container {
@@ -44,8 +53,8 @@ a {
 .homepage-btns {
   width: 250px;
   height: 200px;
-  border: 20px solid transparent;
-  border-image: url(../btn-frame.png) 100 stretch;
+  border: 36px solid transparent;
+  border-image: url(../btn-frame.png) 76 stretch;
   background-color: #E5E5E5;
   box-shadow: 3px 3px 5px #323232;
   color: #323232;
@@ -64,7 +73,13 @@ a {
 }
 
 .favorites {
-  background: no-repeat center/130% url('../favorites-background-hover.jpg');
+  background: no-repeat center/136% url('../favorites-background-hover.jpg');
+}
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .styles-matrix {
@@ -79,6 +94,7 @@ a {
 
 .styles-matrix div {
   text-align: center;
+  animation: fadein linear 300ms;
 }
 
 .title-and-slider {
@@ -93,11 +109,34 @@ a {
 }
 
 .slider-title {
-  width: 300px;
-  min-width: 300px;
-  padding-top: 150px;
+  min-width: 180px;
+  padding-top: 200px;
   color: #323232;
   font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.comparison-footer {
+  padding: 30px 12px;
+  text-align: center;
+}
+
+.see-more-container {
+  /*display: flex;
+  flex-direction: column;*/
+  margin-top: 15px;
+}
+
+.see-more-category {
+  display: inline-block;
+  height: 32px;
+  padding: 4px 16px;
+  border-radius: 3px;
+  margin: 6px 8px;
+  background-color: #E5E5E5;
+  color: #323232;
+  font-size: 16px;
   font-weight: bold;
   text-align: center;
 }
@@ -139,6 +178,7 @@ a {
   min-height: 55vh;
   padding-top: 20px;
   background-color: #E5E5E5;
+  animation: fadein linear 300ms;
 }
 
 .images-list div {
@@ -160,11 +200,15 @@ a {
 }
 
 @media screen and (min-width: 600px) {
+  .header {
+    padding: 24px;
+    justify-content: flex-start;
+  }
+  
   .homepage-btns-container {
     flex-direction: row;
     justify-content: center;
     height: 70vh;
-    align-content: space-around;
   }
   
   .homepage-btns-container a {
@@ -173,7 +217,7 @@ a {
   
   .page-info {
     height: 35vh;
-    padding: 50px;
+    padding: 50px 36px;
   }
 
   .page-info h2 {
@@ -198,6 +242,18 @@ a {
   }
   
   .images-list {
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
     padding: 50px;
   }
+  
+  .image {
+    width: 400px;
+    height: 400px;
+  }
+  
+}
+
+@keyframes fadein {
+  0% { opacity: 0}
+  100% { opacity: 1}
 }
