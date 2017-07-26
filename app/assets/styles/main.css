@@ -53,8 +53,8 @@ a {
 .homepage-btns {
   width: 250px;
   height: 200px;
-  border: 20px solid transparent;
-  border-image: url(../btn-frame.png) 100 stretch;
+  border: 36px solid transparent;
+  border-image: url(../btn-frame.png) 76 stretch;
   background-color: #E5E5E5;
   box-shadow: 3px 3px 5px #323232;
   color: #323232;
@@ -73,7 +73,7 @@ a {
 }
 
 .favorites {
-  background: no-repeat center/130% url('../favorites-background-hover.jpg');
+  background: no-repeat center/136% url('../favorites-background-hover.jpg');
 }
 
 .loader-container {
@@ -108,9 +108,8 @@ a {
 }
 
 .slider-title {
-  width: 300px;
-  min-width: 300px;
-  padding-top: 150px;
+  min-width: 180px;
+  padding-top: 200px;
   color: #323232;
   font-size: 20px;
   font-weight: bold;
@@ -132,7 +131,7 @@ a {
   display: inline-block;
   height: 32px;
   padding: 4px 16px;
-  border-radius: 2px;
+  border-radius: 3px;
   margin: 6px 8px;
   background-color: #E5E5E5;
   color: #323232;
@@ -200,7 +199,7 @@ a {
 
 @media screen and (min-width: 600px) {
   .header {
-    padding: 23px;
+    padding: 24px;
     justify-content: flex-start;
   }
   
@@ -216,7 +215,7 @@ a {
   
   .page-info {
     height: 35vh;
-    padding: 50px;
+    padding: 50px 24px;
   }
 
   .page-info h2 {
