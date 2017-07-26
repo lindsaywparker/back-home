@@ -9,6 +9,10 @@ export default class StylesComparison extends Component {
     this.props.fetchImages();
   }
 
+  componentWillUnmount() {
+    window.scrollTo(0, 0);
+  }
+
   render() {
     const randomImagesObj = STYLES.reduce((styleAcc, style) => {
       styleAcc[style] = CATEGORIES.reduce((catAcc, category) => {

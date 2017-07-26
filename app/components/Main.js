@@ -8,6 +8,10 @@ export default class Main extends Component {
     if (!this.props.images.length) this.props.fetchImages();
   }
 
+  componentWillUnmount() {
+    window.scrollTo(0, 0);
+  }
+
   render() {
     let value;
     let pageImages;
