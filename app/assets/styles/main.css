@@ -108,6 +108,24 @@ a {
   overflow: scroll;
 }
 
+.image-slider::-webkit-scrollbar {
+  background: transparent;
+  height: 8px;
+}
+
+.image-slider::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+.image-slider::-webkit-scrollbar-thumb {
+  background-color: #BBBBBB;
+  border-radius: 5px;
+}
+
+.image-slider::-webkit-scrollbar-thumb:hover {
+  background-color: #727272;
+}
+
 .slider-title {
   min-width: 180px;
   padding-top: 200px;
