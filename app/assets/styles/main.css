@@ -94,6 +94,7 @@ a {
 
 .styles-matrix div {
   text-align: center;
+  animation: fadein linear 300ms;
 }
 
 .title-and-slider {
@@ -177,6 +178,7 @@ a {
   min-height: 55vh;
   padding-top: 20px;
   background-color: #E5E5E5;
+  animation: fadein linear 300ms;
 }
 
 .images-list div {
@@ -215,7 +217,7 @@ a {
   
   .page-info {
     height: 35vh;
-    padding: 50px 24px;
+    padding: 50px 36px;
   }
 
   .page-info h2 {
@@ -249,4 +251,9 @@ a {
     height: 400px;
   }
   
+}
+
+@keyframes fadein {
+  0% { opacity: 0}
+  100% { opacity: 1}
 }

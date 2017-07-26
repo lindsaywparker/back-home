@@ -1,6 +1,7 @@
 import React from 'react';
+import { PAGE_SUMMARY } from '../helpers/constants';
 
-const PageInfo = ({ title }) => {
+const PageInfo = ({ value, title }) => {
   const firstStyleName = 'Modern';
   const secondStyleName = 'Contemporary';
   const thirdStyleName = 'Traditional';
@@ -45,8 +46,8 @@ const PageInfo = ({ title }) => {
     default:
       content =
         <container>
-          <h2>{title.toUpperCase()}</h2>
-          <p className='fav-style'>Awesome info about this style</p>
+          <h2>{title}</h2>
+          <p className='fav-style'>{PAGE_SUMMARY[value]}</p>
         </container>;
   }
 

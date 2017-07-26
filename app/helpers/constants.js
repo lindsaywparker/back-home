@@ -41,3 +41,23 @@ export const DISPLAY_NAME = {
   'pendant-lighting': 'Pendant Lighting',
   'armchairs-and-accent-chairs': 'Armchairs and Accent Chairs',
 };
+export const PAGE_SUMMARY = {
+  contemporary: 'Clean, sleek lines, marked by solid colors with an emphasis on basic shapes and forms.',
+  modern: 'Neutral color palette, polished surfaces, strong geometric shapes and asymmetry.',
+  asian: 'Natural fiber elements, bamboo and colors taken from nature to create a serene, calm environment.',
+  craftsman: '',
+  farmhouse: '',
+  industrial: '',
+  mediterranean: 'Heavy and burnished hardware. Velvets, linens and textured fabrics mix with textured walls.',
+  midcentury: '',
+  rustic: '',
+  scandinavian: '',
+  'shabby-chic-style': 'Cottage-inspired look with painted motifs, floral prints in muted colors, and vintage accessories.',
+  victorian: '',
+  exterior: '',
+  'living-room': '',
+  kitchen: '',
+  'dining-room': '',
+  'pendant-lighting': 'A central aspect of interior design, lights can be simple in structure, yet diverse in design.',
+  'armchairs-and-accent-chairs': 'An arena for designers to compete, chairs are the ultimate challenge of form-meets-function.',
+};
