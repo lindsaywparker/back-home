@@ -17,7 +17,7 @@ const PageInfo = ({ value, title }) => {
       content =
         <container>
           <h2>STYLES</h2>
-          <p className='fav-style'>Awesome info about this page</p>
+          <p className='fav-style'>A collection of fundamental design styles you're likely to see</p>
         </container>;
       break;
     case '/favorites':
