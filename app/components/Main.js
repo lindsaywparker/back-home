@@ -8,10 +8,6 @@ export default class Main extends Component {
     if (!this.props.images.length) this.props.fetchImages();
   }
 
-  componentWillUnmount() {
-    window.scrollTo(0, 0);
-  }
-
   render() {
     let value;
     let pageImages;
@@ -34,11 +30,13 @@ export default class Main extends Component {
       }
     }
 
+
     return (
       <div>
         <PageInfo value={value} title={title} />
         <ImagesList isLoading={this.props.isLoading}
-                    images={pageImages} />
+                    images={pageImages}
+                    handleFavorite={this.props.handleFavorite.bind(this)}/>
       </div>
     );
   }

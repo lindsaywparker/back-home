@@ -24,3 +24,9 @@ export const fetchImagesAction = () => {
   };
 };
 
+export const handleFavoriteAction = (image) => {
+  return {
+    type: 'HANDLE_FAVORITE',
+    image,
+  };
+};

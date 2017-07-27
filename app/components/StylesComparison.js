@@ -17,7 +17,8 @@ export default class StylesComparison extends Component {
     const randomImagesObj = STYLES.reduce((styleAcc, style) => {
       styleAcc[style] = CATEGORIES.reduce((catAcc, category) => {
         const array = this.props.images.filter((image) => {
-          return (image.style === style && image.category === category);
+          return (image.style === style &&
+                  image.category === category);
         });
         const randomImage = array.length !== 0 ?
           array[Math.floor(Math.random() * array.length)]
@@ -41,7 +42,8 @@ export default class StylesComparison extends Component {
           {STYLES.map((style, i) =>
             <ImageSlider key={i}
                          images={randomImagesObj[style]}
-                         style={style} />,
+                         style={style}
+                         handleFavorite={this.props.handleFavorite.bind(this)} />,
           )}
         </div>
         <div className='comparison-footer'>

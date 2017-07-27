@@ -24,7 +24,8 @@ const categories = [
   'pendant-lighting',
   'armchairs-and-accent-chairs',
 ];
-const parsedResults = JSON.parse(fs.readFileSync('src/helpers/results.json'), 'utf8');
+// const parsedResults = JSON.parse(fs.readFileSync('src/helpers/results.json'), 'utf8');
+const parsedResults = {};
 
 styles.forEach((style) => {
   request(`https://www.houzz.com/photos/${style}`, (error, response, html) => {
@@ -43,6 +44,7 @@ styles.forEach((style) => {
 
       if (src.indexOf(style) !== -1) {
         parsedResults[sid] = {
+          sid,
           src,
           style,
           category,
@@ -65,6 +67,7 @@ styles.forEach((style) => {
 
         if (src.indexOf('data') === -1) {
           parsedResults[sid] = {
+            sid,
             src,
             style,
             category,
