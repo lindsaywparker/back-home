@@ -1,5 +1,5 @@
 import React from 'react';
-import { PAGE_SUMMARY } from '../helpers/constants';
+import { DISPLAY_NAME, PAGE_SUMMARY } from '../helpers/constants';
 import { calculateStyle } from '../helpers/favUtils';
 
 const PageInfo = ({ value, title, images }) => {
@@ -22,7 +22,7 @@ const PageInfo = ({ value, title, images }) => {
             {preferenceResults.map((result, i) =>
               <div className='style-calc' key={i}>
                 <p className='fav-percent'>{Math.floor((result.value) * 100)}%</p>
-                <p className='fav-style'>{result.style}</p>
+                <p className='fav-style'>{DISPLAY_NAME[result.style]}</p>
               </div>,
             )}
           </container>;
