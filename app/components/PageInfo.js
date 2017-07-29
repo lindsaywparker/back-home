@@ -21,7 +21,7 @@ const PageInfo = ({ value, title, images }) => {
             <h2>FAVORITES</h2>
             {preferenceResults.map((result, i) =>
               <div className='style-calc' key={i}>
-                <p className='fav-percent'>{Math.floor((result.value) * 100)}%</p>
+                <p className='fav-percent'>{Math.round((result.value) * 100)}%</p>
                 <p className='fav-style'>{DISPLAY_NAME[result.style]}</p>
               </div>,
             )}

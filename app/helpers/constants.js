@@ -40,6 +40,7 @@ export const DISPLAY_NAME = {
   'dining-room': 'Dining Room',
   'pendant-lighting': 'Pendant Lighting',
   'armchairs-and-accent-chairs': 'Armchairs and Accent Chairs',
+  other: 'Other',
 };
 export const PAGE_SUMMARY = {
   contemporary: 'Clean, sleek lines, marked by solid colors with an emphasis on basic shapes and forms',

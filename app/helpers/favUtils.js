@@ -16,7 +16,7 @@ export const calculateStyle = (images) => {
 
   const primarySum = results.reduce((sum, style) => sum += style.value, 0);
 
-  if (primarySum > 1) results.push({ style: 'other', value: (1 - primarySum) });
+  if (primarySum < 0.995) results.push({ style: 'other', value: (1 - primarySum) });
 
   return results;
 };
