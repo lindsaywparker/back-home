@@ -1,7 +1,19 @@
+import { randomizeSliders } from '../helpers/stylesUtils';
+
 export const images = (state = [], action) => {
   switch (action.type) {
     case 'IMAGES_FETCH_SUCCESS':
       return Object.keys(action.images).map(key => action.images[key]);
+
+    default:
+      return state;
+  }
+};
+
+export const sliderImages = (state = {}, action) => {
+  switch (action.type) {
+    case 'RANDOMIZE_SLIDERS':
+      return randomizeSliders(action.images);
 
     default:
       return state;

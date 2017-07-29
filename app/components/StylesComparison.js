@@ -14,24 +14,6 @@ export default class StylesComparison extends Component {
   }
 
   render() {
-    const randomImagesObj = STYLES.reduce((styleAcc, style) => {
-      styleAcc[style] = CATEGORIES.reduce((catAcc, category) => {
-        const array = this.props.images.filter((image) => {
-          return (image.style === style &&
-                  image.category === category);
-        });
-        const randomImage = array.length !== 0 ?
-          array[Math.floor(Math.random() * array.length)]
-          :
-          { style, category, src: '../assets/no-image-found.jpg' };
-
-        catAcc[category] = randomImage;
-        return catAcc;
-      }, {});
-
-      return styleAcc;
-    }, {});
-
     const content = this.props.isLoading ?
       <div className='loader-container'>
         <img className='loader' src='../assets/loader.gif' alt='Loading...' />
@@ -41,7 +23,7 @@ export default class StylesComparison extends Component {
         <div className='styles-matrix'>
           {STYLES.map((style, i) =>
             <ImageSlider key={i}
-                         images={randomImagesObj[style]}
+                         images={this.props.sliderImages[style]}
                          style={style}
                          favorites={this.props.favorites}
                          handleFavorite={this.props.handleFavorite.bind(this)} />,
