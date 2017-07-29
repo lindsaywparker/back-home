@@ -5,6 +5,7 @@ import { fetchImagesAction, handleFavoriteAction } from '../actions/images';
 const mapStateToProps = (state) => {
   return {
     images: state.images,
+    sliderImages: state.sliderImages,
     isLoading: state.isLoading,
     favorites: state.favorites,
   };

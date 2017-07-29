@@ -14,11 +14,19 @@ export const imagesFetchSuccess = (images) => {
   };
 };
 
+export const randomizeSliders = (images) => {
+  return {
+    type: 'RANDOMIZE_SLIDERS',
+    images,
+  };
+};
+
 export const fetchImagesAction = () => {
   return (dispatch) => {
     return fetchImages()
       .then((images) => {
         dispatch(imagesFetchSuccess(images));
+        dispatch(randomizeSliders(images));
         dispatch(isLoading(false));
       });
   };
