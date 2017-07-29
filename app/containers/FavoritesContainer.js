@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import Main from '../components/Main';
-import { handleFavoriteAction } from '../actions/images';
+import { handleFavoriteAction, getFavoritesAction } from '../actions/images';
 
 const mapStateToProps = (state) => {
   return {
@@ -12,6 +12,7 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
   return {
     handleFavorite: image => dispatch(handleFavoriteAction(image)),
+    getFavorites: () => dispatch(getFavoritesAction()),
   };
 };
 

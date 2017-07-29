@@ -20,3 +20,11 @@ export const calculateStyle = (images) => {
 
   return results;
 };
+
+export const lsSetFavorites = (favorites) => {
+  localStorage.setItem('favorites', JSON.stringify(favorites));
+};
+
+export const lsGetFavorites = () => {
+  return JSON.parse(localStorage.getItem('favorites'));
+};

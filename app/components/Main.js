@@ -4,6 +4,10 @@ import ImagesList from './ImagesList';
 import { DISPLAY_NAME } from '../helpers/constants';
 
 export default class Main extends Component {
+  componentDidMount() {
+    this.props.getFavorites();
+  }
+
   render() {
     const value = this.props.type;
     let title = DISPLAY_NAME[value];
