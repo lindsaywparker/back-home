@@ -3,6 +3,9 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Header from './Header';
 import Home from './Home';
 import MainContainer from '../containers/MainContainer';
+import FavoritesContainer from '../containers/FavoritesContainer';
+import OneConditionContainer from '../containers/OneConditionContainer';
+import TwoConditionContainer from '../containers/TwoConditionContainer';
 import StylesCompContainer from '../containers/StylesCompContainer';
 
 class App extends Component {
@@ -18,15 +21,17 @@ class App extends Component {
                  component={StylesCompContainer} />
           <Route exact
                  path='/favorites'
-                 component={MainContainer} />
+                 component={FavoritesContainer} />
           <Route exact
-                 path='/styles/:style'
-                 component={MainContainer} />
+                 path='/styles/:type'
+                 render={ ({ match }) =>
+                   <MainContainer type={match.params.type} /> } />
+{/* need type in my container to filter... how? */}
           <Route exact
-                 path='/styles/all/:category'
-                 component={MainContainer} />
-          <Route path='/styles/:style/:category'
-                 component={MainContainer} />
+                 path='/styles/:style/:category'
+                 render={ ({ match }) =>
+                   <MainContainer style={match.params.style}
+                                  category={match.params.category} /> } />
         </div>
     );
   }

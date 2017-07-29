@@ -2,14 +2,16 @@ import React from 'react';
 import Image from './Image';
 
 
-const ImagesList = ({ isLoading, images, handleFavorite }) => {
+const ImagesList = ({ isLoading, images, favorites, handleFavorite }) => {
   const representativeImages = isLoading ?
-    <img className='loader' src='../assets/loader.gif' alt='Loading...' /> :
-    images.filter(image => image)
-          .map((image, i) => <Image key={i}
-                                    image={image}
-                                    routing={false}
-                                    handleFavorite={handleFavorite}/>);
+    <img className='loader' src='../assets/loader.gif' alt='Loading...' />
+    :
+    images.map((image, i) =>
+      <Image key={i}
+        image={image}
+        favorite={favorites.find(imageObj => imageObj.sid === image.sid)}
+        routing={false}
+        handleFavorite={handleFavorite} />);
 
   return (
     <div className='images-list'>

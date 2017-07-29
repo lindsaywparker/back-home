@@ -1,15 +1,8 @@
 import React from 'react';
 import { PAGE_SUMMARY } from '../helpers/constants';
+import { calculateStyle } from '../helpers/favUtils';
 
-const PageInfo = ({ value, title }) => {
-  const firstStyleName = 'Modern';
-  const secondStyleName = 'Contemporary';
-  const thirdStyleName = 'Traditional';
-  const fourthStyleName = 'Other';
-  const firstStylePercent = '58%';
-  const secondStylePercent = '21%';
-  const thirdStylePercent = '14%';
-  const fourthStylePercent = '7%';
+const PageInfo = ({ value, title, images }) => {
   let content;
 
   switch (location.pathname) {
@@ -21,27 +14,27 @@ const PageInfo = ({ value, title }) => {
         </container>;
       break;
     case '/favorites':
-      // {} = calculateStyle();
-      content =
-        <container>
-          <h2>FAVORITES</h2>
-          <div className='style-calc'>
-            <p className='fav-percent'>{firstStylePercent}</p>
-            <p className='fav-style'>{firstStyleName}</p>
-          </div>
-          <div className='style-calc'>
-            <p className='fav-percent'>{secondStylePercent}</p>
-            <p className='fav-style'>{secondStyleName}</p>
-          </div>
-          <div className='style-calc'>
-            <p className='fav-percent'>{thirdStylePercent}</p>
-            <p className='fav-style'>{thirdStyleName}</p>
-          </div>
-          <div className='style-calc'>
-            <p className='fav-percent'>{fourthStylePercent}</p>
-            <p className='fav-style'>{fourthStyleName}</p>
-          </div>
-        </container>;
+      if (images.length) {
+        const preferenceResults = calculateStyle(images);
+        content =
+          <container>
+            <h2>FAVORITES</h2>
+            {preferenceResults.map((result, i) =>
+              <div className='style-calc' key={i}>
+                <p className='fav-percent'>{Math.floor((result.value) * 100)}%</p>
+                <p className='fav-style'>{result.style}</p>
+              </div>,
+            )}
+          </container>;
+      } else {
+        content =
+          <container>
+            <h2>FAVORITES</h2>
+            <p className='fav-style'>YOU'VE NOT SAVED ANY FAVORITES</p>
+            <p className='fav-style'>Check out Styles and click the heart on an image to save it here</p>
+          </container>;
+      }
+
       break;
     default:
       content =

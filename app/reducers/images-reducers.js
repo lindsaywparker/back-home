@@ -12,11 +12,11 @@ export const favorites = (state = [], action) => {
   switch (action.type) {
     case 'HANDLE_FAVORITE':
       const index = state.findIndex(image => image.sid === action.image.sid);
-      console.log('reducer', index);
       if (index === -1) {
+        action.image.favorite = true;
         return [...state, action.image];
       }
-      const newState = state.splice(index, 1);
+      const newState = state.filter(image => image.sid !== action.image.sid);
       return [...newState];
 
     default:

@@ -2,12 +2,12 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { DISPLAY_NAME } from '../helpers/constants';
 
-const Image = ({ image, routing, handleFavorite }) => {
+const Image = ({ image, favorite, routing, handleFavorite }) => {
   const handleFavoriteClick = () => {
     handleFavorite(image);
   };
 
-  const favoriteClass = image.favorite ? 'favorite-active' : '';
+  const favoriteClass = favorite ? 'favorite-active' : '';
 
   const imageContent = routing ?
     <NavLink to={`/styles/${image.style}/${image.category}`}>

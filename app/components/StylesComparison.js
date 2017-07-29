@@ -43,6 +43,7 @@ export default class StylesComparison extends Component {
             <ImageSlider key={i}
                          images={randomImagesObj[style]}
                          style={style}
+                         favorites={this.props.favorites}
                          handleFavorite={this.props.handleFavorite.bind(this)} />,
           )}
         </div>
@@ -50,7 +51,7 @@ export default class StylesComparison extends Component {
           <h3>See more from</h3>
           <div className='see-more-container'>
             {CATEGORIES.map((category, i) =>
-              <NavLink to={`/styles/all/${category}`} key={i} className='see-more-category'>
+              <NavLink to={`/styles/${category}`} key={i} className='see-more-category'>
                 {DISPLAY_NAME[category]}
               </NavLink>,
             )}
