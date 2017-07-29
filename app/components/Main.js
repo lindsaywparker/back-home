@@ -4,37 +4,33 @@ import ImagesList from './ImagesList';
 import { DISPLAY_NAME } from '../helpers/constants';
 
 export default class Main extends Component {
-  componentDidMount() {
-    if (!this.props.images.length) this.props.fetchImages();
-  }
-
   render() {
-    let value;
-    let pageImages;
-    let title;
+    const value = this.props.type;
+    let title = DISPLAY_NAME[value];
+    let renderImages = this.props.images;
 
-    if (location.pathname === '/favorites') {
-      pageImages = this.props.images.filter(image => image.favorite);
-    } else {
-      const keys = Object.keys(this.props.match.params);
-      if (keys.length > 1) {
-        title = `${DISPLAY_NAME[this.props.match.params[keys[0]]]} ${DISPLAY_NAME[this.props.match.params[keys[1]]]}`;
-        pageImages = this.props.images.filter((image) => {
-          return image[keys[0]] === this.props.match.params[keys[0]] &&
-                 image[keys[1]] === this.props.match.params[keys[1]];
-        });
-      } else {
-        value = this.props.match.params[keys[0]];
-        title = DISPLAY_NAME[this.props.match.params[keys[0]]];
-        pageImages = this.props.images.filter(image => image[keys[0]] === value);
-      }
+    if (this.props.type) {
+      renderImages = renderImages.filter(image =>
+        image.style === this.props.type || image.category === this.props.type);
+    }
+
+    if (this.props.style && this.props.category) {
+      renderImages = renderImages.filter(image =>
+        image.style === this.props.style &&
+        image.category === this.props.category);
+      title = `${DISPLAY_NAME[this.props.style]}
+               ${DISPLAY_NAME[this.props.category]}`;
     }
 
     return (
       <div>
-        <PageInfo value={value} title={title} />
+        <PageInfo value={value}
+                  title={title}
+                  images={renderImages}/>
         <ImagesList isLoading={this.props.isLoading}
-                    images={pageImages} />
+                    images={renderImages}
+                    favorites={this.props.favorites}
+                    handleFavorite={this.props.handleFavorite.bind(this)}/>
       </div>
     );
   }

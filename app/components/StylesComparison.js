@@ -9,17 +9,23 @@ export default class StylesComparison extends Component {
     this.props.fetchImages();
   }
 
+  componentWillUnmount() {
+    window.scrollTo(0, 0);
+  }
+
   render() {
     const randomImagesObj = STYLES.reduce((styleAcc, style) => {
       styleAcc[style] = CATEGORIES.reduce((catAcc, category) => {
         const array = this.props.images.filter((image) => {
-          return (image.style === style && image.category === category);
+          return (image.style === style &&
+                  image.category === category);
         });
-        const randomImageSrc = array.length !== 0 ?
-          array[Math.floor(Math.random() * array.length)].src :
-          '../assets/no-image-found.jpg';
+        const randomImage = array.length !== 0 ?
+          array[Math.floor(Math.random() * array.length)]
+          :
+          { style, category, src: '../assets/no-image-found.jpg' };
 
-        catAcc[category] = randomImageSrc;
+        catAcc[category] = randomImage;
         return catAcc;
       }, {});
 
@@ -36,14 +42,16 @@ export default class StylesComparison extends Component {
           {STYLES.map((style, i) =>
             <ImageSlider key={i}
                          images={randomImagesObj[style]}
-                         style={style} />,
+                         style={style}
+                         favorites={this.props.favorites}
+                         handleFavorite={this.props.handleFavorite.bind(this)} />,
           )}
         </div>
         <div className='comparison-footer'>
           <h3>See more from</h3>
           <div className='see-more-container'>
             {CATEGORIES.map((category, i) =>
-              <NavLink to={`/styles/all/${category}`} key={i} className='see-more-category'>
+              <NavLink to={`/styles/${category}`} key={i} className='see-more-category'>
                 {DISPLAY_NAME[category]}
               </NavLink>,
             )}

@@ -3,14 +3,14 @@ import Image from './Image';
 import { NavLink } from 'react-router-dom';
 import { DISPLAY_NAME } from '../helpers/constants';
 
-const ImageSlider = ({ images, style }) => {
+const ImageSlider = ({ images, style, favorites, handleFavorite }) => {
   const categoryKeys = Object.keys(images);
   const slider = categoryKeys.map((category, i) =>
     <Image key={i}
-                  routing={true}
-                  style={style}
-                  category={category}
-                  src={images[category]} />,
+           image={images[category]}
+           favorite={favorites.find(imageObj => imageObj.sid === images[category].sid)}
+           routing={true}
+           handleFavorite={handleFavorite}/>,
   );
 
   return (

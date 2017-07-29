@@ -54,7 +54,7 @@ a {
   width: 250px;
   height: 200px;
   border: 36px solid transparent;
-  border-image: url(../btn-frame.png) 76 stretch;
+  border-image: url(../btn-frame.png) 50 stretch;
   background-color: #E5E5E5;
   box-shadow: 3px 3px 5px #323232;
   color: #323232;
@@ -69,11 +69,11 @@ a {
 }
 
 .styles {
-  background: no-repeat center/130% url('../styles-background-hover.jpg');
+  background: no-repeat center/130% url('../styles-background.jpg');
 }
 
 .favorites {
-  background: no-repeat center/136% url('../favorites-background-hover.jpg');
+  background: no-repeat center/145% url('../favorites-background.jpg');
 }
 
 .loader-container {
@@ -84,7 +84,7 @@ a {
 
 .styles-matrix {
   background-color: #E5E5E5;
-  padding: 50px;
+  padding: 50px 36px;
 }
 
 .styles-matrix div {
@@ -94,12 +94,22 @@ a {
 
 .title-and-slider {
   display: flex;
+  flex-direction: column;
   margin: 20px 0;
+  align-items: baseline;
+}
+
+.slider-title {
+  padding-top: 30px;
+  color: #323232;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .image-slider {
   display: flex;
-  width: 90vw;
+  width: 100%;
+  margin: auto 24px;
   overflow: scroll;
 }
 
@@ -119,15 +129,6 @@ a {
 
 .image-slider::-webkit-scrollbar-thumb:hover {
   background-color: #959595;
-}
-
-.slider-title {
-  min-width: 180px;
-  padding-top: 200px;
-  color: #323232;
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
 }
 
 .comparison-footer {
@@ -198,6 +199,10 @@ a {
   text-align: center;
 }
 
+.category-name {
+  font-style: italic;
+}
+
 .image {
   width: 300px;
   height: 300px;
@@ -209,7 +214,7 @@ a {
 
 .favorite-icon {
   position: absolute;
-  bottom: 12px;
+  bottom: 32px;
   left: 18px;
   width: 40px;
   height: 40px;
