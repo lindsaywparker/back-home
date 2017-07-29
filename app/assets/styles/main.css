@@ -20,6 +20,7 @@ a {
   justify-content: center;
   height: 10vh;
   background-color: #323232;
+  color: #FFF;
   font-family: 'Martel Sans', sans-serif;
   text-align: center;
 }
@@ -31,6 +32,18 @@ a {
 
 .header a {
   color: #FFF;
+}
+
+.nav-btn-container {
+  display: flex;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.nav-btn {
+  width: 150px;
+  font-weight: lighter;
+  letter-spacing: 0.25em;
+  text-align: right;
 }
 
 .home {
@@ -241,7 +254,7 @@ a {
 @media screen and (min-width: 600px) {
   .header {
     padding: 24px;
-    justify-content: flex-start;
+    justify-content: space-between;
   }
   
   .homepage-btns-container {

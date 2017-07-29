@@ -4,15 +4,13 @@ import Header from './Header';
 import Home from './Home';
 import MainContainer from '../containers/MainContainer';
 import FavoritesContainer from '../containers/FavoritesContainer';
-import OneConditionContainer from '../containers/OneConditionContainer';
-import TwoConditionContainer from '../containers/TwoConditionContainer';
 import StylesCompContainer from '../containers/StylesCompContainer';
 
 class App extends Component {
   render() {
     return (
         <div>
-          <Header />
+          <Header location={location}/>
           <Route exact
                  path='/'
                  component={Home} />
@@ -26,7 +24,6 @@ class App extends Component {
                  path='/styles/:type'
                  render={ ({ match }) =>
                    <MainContainer type={match.params.type} /> } />
-{/* need type in my container to filter... how? */}
           <Route exact
                  path='/styles/:style/:category'
                  render={ ({ match }) =>
