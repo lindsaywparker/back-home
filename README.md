@@ -1,9 +1,8 @@
 ## Back Home - A Turing Mod 3 FEE Project
 
 ### Synopsis
-TBD
+This project contains a card-based interface displaying architectural and interior design images across twelve fundamental design styles and six design categories (see table below).  These images are scraped from the [Houzz website](houzz.com/photos) using the [Cheerio module](https://github.com/cheeriojs/cheerio).  The project provides functionality to select and display the user's favorite images, as well as a calculation of the user's style preferences.
 
-<!-- This project contains a card-based interface displaying key information on the people, planets and vehicles of the Star Wars franchise.  This information is called from the [Star Wars API](https://swapi.co/) resulting in nested `fetch` calls and `Promise.all()`.  The project also provides functionality to select and display the user's favorite cards. -->
 
 ### Set Up
 
@@ -22,8 +21,7 @@ Run with `npm test`
 
 [Self-Directed Project](http://frontend.turing.io/projects/self-directed-project.html) from the Turing School of Software & Design
 
-### Project Goals
-TBD
+<!-- ### Project Goals -->
 
 <!-- * Make informed design decisions to create a user-friendly application.
 * Create modular, reusable React components.
