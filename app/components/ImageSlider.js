@@ -18,7 +18,7 @@ const ImageSlider = ({ images, style, favorites, handleFavorite }) => {
       <h3 className='slider-title'>{DISPLAY_NAME[style]}</h3>
       <div className='image-slider'>
         {slider}
-        <NavLink to={`/styles/${style}`} className='slider-title see-more'>
+        <NavLink to={`/styles/${style}`} className='see-more'>
           {`See more from ${DISPLAY_NAME[style]}`}
         </NavLink>
       </div>
