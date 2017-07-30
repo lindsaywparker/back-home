@@ -21,20 +21,27 @@ export const randomizeSliders = (images) => {
   };
 };
 
-export const fetchImagesAction = () => {
-  return (dispatch) => {
-    return fetchImages()
-      .then((images) => {
-        dispatch(imagesFetchSuccess(images));
-        dispatch(randomizeSliders(images));
-        dispatch(isLoading(false));
-      });
-  };
-};
-
 export const handleFavoriteAction = (image) => {
   return {
     type: 'HANDLE_FAVORITE',
     image,
+  };
+};
+
+export const getFavoritesAction = () => {
+  return {
+    type: 'GET_FAVORITES',
+  };
+};
+
+export const fetchImagesAction = () => {
+  return (dispatch) => {
+    return fetchImages()
+    .then((images) => {
+      dispatch(imagesFetchSuccess(images));
+      dispatch(randomizeSliders(images));
+      dispatch(getFavoritesAction());
+      dispatch(isLoading(false));
+    });
   };
 };
