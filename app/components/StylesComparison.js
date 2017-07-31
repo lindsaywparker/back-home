@@ -42,7 +42,7 @@ export default class StylesComparison extends Component {
       </div>;
 
     return (
-      <div>
+      <div className='styles-comparison'>
         <PageInfo location={location} />
         {content}
       </div>

@@ -3,8 +3,11 @@ import { shallow } from 'enzyme';
 import TestUtils from 'react-dom/test-utils';
 import { createRenderer } from 'react-test-renderer/shallow';
 import { images, sliderImages, favorites, isLoading } from '../app/reducers/images-reducers';
+import { randomizeSliders } from '../app/helpers/stylesUtils';
 
 describe('REDUCERS', () => {
+  const ls = global.localStorage;
+
   it('should have initial state', () => {
     expect(images(undefined, { type: '' })).toEqual([]);
     expect(sliderImages(undefined, { type: '' })).toEqual({});
@@ -26,19 +29,21 @@ describe('REDUCERS', () => {
         1234: 'image data',
         5678: 'second image data',
       },
-    }))
-      .toEqual(['image data', 'second image data']);
+    })).toEqual(['image data', 'second image data']);
   });
 
-  it.skip('should handle RANDOMIZE_SLIDERS', () => {
-
+  it('should handle RANDOMIZE_SLIDERS', () => {
+    expect(sliderImages(undefined, {
+      type: 'RANDOMIZE_SLIDERS',
+      images: {},
+    })).toEqual(randomizeSliders({}));
   });
 
   it('should handle HANDLE_FAVORITE', () => {
     expect(favorites([], {
       type: 'HANDLE_FAVORITE',
       image: { sid: 1 },
-    })).toEqual([{ favorite: true, sid: 1 }]);
+    })).toEqual([{ sid: 1 }]);
 
     expect(favorites([{ sid: 1 }], {
       type: 'HANDLE_FAVORITE',
