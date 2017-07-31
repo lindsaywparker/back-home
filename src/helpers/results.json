@@ -41,6 +41,12 @@
         "style": "victorian",
         "category": "exterior"
     },
+    "1074274": {
+        "sid": "1074274",
+        "src": "https://st.hzcdn.com/fimgs/7291bf730fda0440_3498-w358-h358-b0-p0--rustic-exterior.jpg",
+        "style": "rustic",
+        "category": "exterior"
+    },
     "126217": {
         "sid": "126217",
         "src": "https://st.hzcdn.com/fimgs/19d107eb0d59c0f3_1773-w500-h400-b0-p0--craftsman-kitchen.jpg",
@@ -113,12 +119,6 @@
         "style": "craftsman",
         "category": "kitchen"
     },
-    "478610": {
-        "sid": "478610",
-        "src": "https://st.hzcdn.com/simgs/d451ce660f196b7c_15-4400/modern-exterior.jpg",
-        "style": "modern",
-        "category": "exterior"
-    },
     "513682": {
         "sid": "513682",
         "src": "https://st.hzcdn.com/fimgs/94515b9b0f232826_2591-w500-h666-b0-p0--asian-living-room.jpg",
@@ -142,6 +142,12 @@
         "src": "https://st.hzcdn.com/fimgs/648182ed0f9c96dc_2269-w338-h450-b0-p0--modern-exterior.jpg",
         "style": "modern",
         "category": "exterior"
+    },
+    "86397431": {
+        "sid": "86397431",
+        "src": "https://st.hzcdn.com/fimgs/c64116ac08b3552d_0345-w358-h358-b0-p0--modern-dining-room.jpg",
+        "style": "modern",
+        "category": "dining-room"
     },
     "875798": {
         "sid": "875798",
@@ -761,11 +767,11 @@
         "style": "rustic",
         "category": "pendant-lighting"
     },
-    "11116856": {
-        "sid": "11116856",
-        "src": "https://st.hzcdn.com/fimgs/51c17300034c3144_8234-w233-h233-b1-p10--contemporary-armchairs-and-accent-chairs.jpg",
-        "style": "contemporary",
-        "category": "armchairs-and-accent-chairs"
+    "11127860": {
+        "sid": "11127860",
+        "src": "https://st.hzcdn.com/fimgs/b0e10ecc034ca6c6_8964-w358-h358-b0-p0--modern-living-room.jpg",
+        "style": "modern",
+        "category": "living-room"
     },
     "11171905": {
         "sid": "11171905",
@@ -839,12 +845,6 @@
         "style": "asian",
         "category": "kitchen"
     },
-    "12279792": {
-        "sid": "12279792",
-        "src": "https://st.hzcdn.com/fimgs/bdb1b8b80374ded6_7850-w500-h666-b0-p0--contemporary-kitchen.jpg",
-        "style": "contemporary",
-        "category": "kitchen"
-    },
     "12311799": {
         "sid": "12311799",
         "src": "https://st.hzcdn.com/fimgs/ae11415103762583_8269-w233-h233-b1-p10--contemporary-armchairs-and-accent-chairs.jpg",
@@ -892,6 +892,12 @@
         "src": "https://st.hzcdn.com/fimgs/2d419f3c039b223c_5774-w233-h233-b1-p10--asian-pendant-lighting.jpg",
         "style": "asian",
         "category": "pendant-lighting"
+    },
+    "13313231": {
+        "sid": "13313231",
+        "src": "https://st.hzcdn.com/fimgs/a1b1ef8e039b5719_5055-w233-h233-b1-p10-q80--asian-armchairs-and-accent-chairs.jpg",
+        "style": "asian",
+        "category": "armchairs-and-accent-chairs"
     },
     "13316338": {
         "sid": "13316338",
@@ -1079,6 +1085,12 @@
         "style": "asian",
         "category": "pendant-lighting"
     },
+    "16086289": {
+        "sid": "16086289",
+        "src": "https://st.hzcdn.com/fimgs/18c1849603f3790d_5348-w358-h358-b0-p0--victorian-living-room.jpg",
+        "style": "victorian",
+        "category": "living-room"
+    },
     "16182815": {
         "sid": "16182815",
         "src": "https://st.hzcdn.com/fimgs/be4171cb03f52cb5_8185-w500-h400-b0-p0--industrial-kitchen.jpg",
@@ -1180,12 +1192,6 @@
         "src": "https://st.hzcdn.com/fimgs/28f101070425cd54_3542-w233-h233-b1-p10--craftsman-pendant-lighting.jpg",
         "style": "craftsman",
         "category": "pendant-lighting"
-    },
-    "17961891": {
-        "sid": "17961891",
-        "src": "https://st.hzcdn.com/fimgs/263140ac06e2fed8_5067-w233-h233-b1-p10--contemporary-armchairs-and-accent-chairs.jpg",
-        "style": "contemporary",
-        "category": "armchairs-and-accent-chairs"
     },
     "18019712": {
         "sid": "18019712",
@@ -1337,6 +1343,12 @@
         "style": "scandinavian",
         "category": "living-room"
     },
+    "2159438": {
+        "sid": "2159438",
+        "src": "https://st.hzcdn.com/fimgs/bcb1663100c0e641_9141-w358-h358-b0-p0--asian-exterior.jpg",
+        "style": "asian",
+        "category": "exterior"
+    },
     "21599126": {
         "sid": "21599126",
         "src": "https://st.hzcdn.com/fimgs/e861969f04a1fce0_2179-w233-h233-b1-p10--modern-pendant-lighting.jpg",
@@ -1402,12 +1414,6 @@
         "src": "https://st.hzcdn.com/fimgs/c2314fa604ca6593_2841-w233-h233-b1-p10--industrial-armchairs-and-accent-chairs.jpg",
         "style": "industrial",
         "category": "armchairs-and-accent-chairs"
-    },
-    "22907661": {
-        "sid": "22907661",
-        "src": "https://st.hzcdn.com/fimgs/47f162c704c2c0a3_9447-w500-h400-b0-p0--contemporary-exterior.jpg",
-        "style": "contemporary",
-        "category": "exterior"
     },
     "23019361": {
         "sid": "23019361",
@@ -2321,6 +2327,12 @@
         "style": "asian",
         "category": "living-room"
     },
+    "41937": {
+        "sid": "41937",
+        "src": "https://st.hzcdn.com/fimgs/8ef113340b63b652_7175-w358-h358-b0-p0--victorian-dining-room.jpg",
+        "style": "victorian",
+        "category": "dining-room"
+    },
     "42024699": {
         "sid": "42024699",
         "src": "https://st.hzcdn.com/fimgs/77c11f880626c13e_4572-w233-h233-b1-p10--victorian-pendant-lighting.jpg",
@@ -2537,6 +2549,12 @@
         "style": "rustic",
         "category": "armchairs-and-accent-chairs"
     },
+    "43679675": {
+        "sid": "43679675",
+        "src": "https://st.hzcdn.com/fimgs/a4613fb5064b0b58_5067-w358-h358-b0-p0--asian-dining-room.jpg",
+        "style": "asian",
+        "category": "dining-room"
+    },
     "43710819": {
         "sid": "43710819",
         "src": "https://st.hzcdn.com/fimgs/23d1019b064ba602_6018-w233-h233-b1-p10--rustic-armchairs-and-accent-chairs.jpg",
@@ -2723,6 +2741,12 @@
         "style": "scandinavian",
         "category": "armchairs-and-accent-chairs"
     },
+    "47971935": {
+        "sid": "47971935",
+        "src": "https://st.hzcdn.com/fimgs/9bc1885506b4e4b7_8542-w233-h233-b1-p10-q80--mediterranean-pendant-lighting.jpg",
+        "style": "mediterranean",
+        "category": "pendant-lighting"
+    },
     "47979243": {
         "sid": "47979243",
         "src": "https://st.hzcdn.com/fimgs/c8518a5206b4f4c5_0822-w233-h233-b1-p10--craftsman-armchairs-and-accent-chairs.jpg",
@@ -2867,6 +2891,12 @@
         "style": "scandinavian",
         "category": "living-room"
     },
+    "50220569": {
+        "sid": "50220569",
+        "src": "https://st.hzcdn.com/fimgs/2e71667606de31c3_3529-w358-h358-b0-p0--industrial-exterior.jpg",
+        "style": "industrial",
+        "category": "exterior"
+    },
     "50291816": {
         "sid": "50291816",
         "src": "https://st.hzcdn.com/fimgs/ce91acb006df3711_4809-w233-h233-b1-p10--industrial-armchairs-and-accent-chairs.jpg",
@@ -2907,6 +2937,12 @@
         "sid": "50470967",
         "src": "https://st.hzcdn.com/fimgs/dae148cf06e1e827_4472-w233-h233-b1-p10-q87--farmhouse-pendant-lighting.jpg",
         "style": "farmhouse",
+        "category": "pendant-lighting"
+    },
+    "50569962": {
+        "sid": "50569962",
+        "src": "https://st.hzcdn.com/fimgs/36c133e406fbeee8_8511-w233-h233-b1-p10-q80--midcentury-pendant-lighting.jpg",
+        "style": "midcentury",
         "category": "pendant-lighting"
     },
     "50741031": {
@@ -3208,6 +3244,12 @@
         "src": "https://st.hzcdn.com/fimgs/7c61e1b2071a9635_5721-w233-h233-b1-p10--victorian-pendant-lighting.jpg",
         "style": "victorian",
         "category": "pendant-lighting"
+    },
+    "53631976": {
+        "sid": "53631976",
+        "src": "https://www.houzz.com/photos/53631976/Baxton-Studio-Jericho-Brown-Leather-Accent-Chair-contemporary-armchairs-and-accent-chairs",
+        "style": "contemporary",
+        "category": "armchairs-and-accent-chairs"
     },
     "53646703": {
         "sid": "53646703",
@@ -3551,6 +3593,12 @@
         "style": "modern",
         "category": "kitchen"
     },
+    "60816633": {
+        "sid": "60816633",
+        "src": "https://st.hzcdn.com/fimgs/13b125a407c8aab1_6449-w233-h233-b1-p10-q80--beach-style-armchairs-and-accent-chairs.jpg",
+        "style": "shabby-chic-style",
+        "category": "armchairs-and-accent-chairs"
+    },
     "61155112": {
         "sid": "61155112",
         "src": "https://st.hzcdn.com/fimgs/cad1b2de0795f03c_1023-w233-h233-b1-p10--victorian-armchairs-and-accent-chairs.jpg",
@@ -3819,6 +3867,12 @@
         "sid": "64105964",
         "src": "https://st.hzcdn.com/fimgs/4511a05607d6e10c_9937-w233-h233-b1-p10-q87--farmhouse-armchairs-and-accent-chairs.jpg",
         "style": "farmhouse",
+        "category": "armchairs-and-accent-chairs"
+    },
+    "64127778": {
+        "sid": "64127778",
+        "src": "https://st.hzcdn.com/fimgs/ac81ecf607bfba86_8371-w233-h233-b1-p10-q80--modern-armchairs-and-accent-chairs.jpg",
+        "style": "modern",
         "category": "armchairs-and-accent-chairs"
     },
     "64213100": {
@@ -4325,6 +4379,12 @@
         "style": "scandinavian",
         "category": "dining-room"
     },
+    "76586734": {
+        "sid": "76586734",
+        "src": "https://www.houzz.com/photos/76586734/Nynette-Velvet-Retro-Mid-Century-Accent-Chair-contemporary-armchairs-and-accent-chairs",
+        "style": "contemporary",
+        "category": "armchairs-and-accent-chairs"
+    },
     "76719227": {
         "sid": "76719227",
         "src": "https://st.hzcdn.com/fimgs/9a31314b082b2881_7592-w233-h233-b1-p10--rustic-pendant-lighting.jpg",
@@ -4786,12 +4846,6 @@
         "src": "https://st.hzcdn.com/fimgs/bdc17dcd088a2811_9658-w233-h233-b1-p10--scandinavian-pendant-lighting.jpg",
         "style": "scandinavian",
         "category": "pendant-lighting"
-    },
-    "83969210": {
-        "sid": "83969210",
-        "src": "https://st.hzcdn.com/simgs/bf41450b088e0c08_15-0506/contemporary-living-room.jpg",
-        "style": "shabby-chic-style",
-        "category": "living-room"
     },
     "84035397": {
         "sid": "84035397",

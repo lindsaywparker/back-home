@@ -1,13 +1,13 @@
 export const IMAGES_API = '/api/images';
 export const STYLES = [
-  'contemporary',
-  'modern',
   'asian',
+  'contemporary',
   'craftsman',
   'farmhouse',
   'industrial',
   'mediterranean',
   'midcentury',
+  'modern',
   'rustic',
   'scandinavian',
   'shabby-chic-style',
