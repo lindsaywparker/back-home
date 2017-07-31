@@ -27,14 +27,14 @@ export default class Main extends Component {
     }
 
     return (
-      <div>
+      <div className='main'>
         <PageInfo value={value}
                   title={title}
                   images={renderImages}/>
         <ImagesList isLoading={this.props.isLoading}
-                    images={renderImages}
-                    favorites={this.props.favorites}
-                    handleFavorite={this.props.handleFavorite.bind(this)}/>
+                  images={renderImages}
+                  favorites={this.props.favorites}
+                  handleFavorite={this.props.handleFavorite.bind(this)}/>
       </div>
     );
   }
