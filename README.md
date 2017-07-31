@@ -1,7 +1,7 @@
 ## Back Home - A Turing Mod 3 FEE Project
 
 ### Synopsis
-This project contains a card-based interface displaying architectural and interior design images across twelve fundamental design styles and six design categories (see table below).  These images are scraped from the [Houzz website](houzz.com/photos) using the [Cheerio module](https://github.com/cheeriojs/cheerio).  The project provides functionality to select and display the user's favorite images, as well as a calculation of the user's style preferences.
+This project contains a card-based interface displaying architectural and interior design images across twelve fundamental design styles and six design categories.  These images are scraped from the [Houzz website](houzz.com/photos) using the [Cheerio module](https://github.com/cheeriojs/cheerio).  The project provides functionality to select and display the user's favorite images, as well as a calculation of the user's style preferences.
 
 
 ### Set Up
