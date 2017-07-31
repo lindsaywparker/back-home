@@ -2,16 +2,29 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import TestUtils from 'react-dom/test-utils';
 import { createRenderer } from 'react-test-renderer/shallow';
-import { fetchImages } from '../app/helpers/apiUtils';
+import fetchMock from 'fetch-mock';
+import fetchImages from '../app/helpers/apiUtils';
 import { calculateStyle, lsSetFavorites, lsGetFavorites } from '../app/helpers/favUtils';
 import { randomizeSliders } from '../app/helpers/stylesUtils';
+import { IMAGES_API } from '../app/helpers/constants';
 
 describe('UTILS', () => {
   const ls = global.localStorage;
 
-  // it('fetchImages should fetch images', () => {
-  //
-  // });
+  it('fetchImages should fetch images', () => {
+    const response = {
+      1: {
+        sid: '26568',
+        src: 'https://st.hzcdn.com/fimgs/6af14e360a6e0622_7345-w500-h400-b0-p0--shabby-chic-style-dining-room.jpg',
+        style: 'shabby-chic-style',
+        category: 'dining-room',
+      },
+    };
+
+    fetchMock.mock(IMAGES_API, response);
+    fetchImages();
+    expect(fetchMock.calls().unmatched).toEqual([]);
+  });
 
   it('calculateStyle should calcuate the style preference', () => {
     const images = [
@@ -28,8 +41,7 @@ describe('UTILS', () => {
       { style: 'victorian' },
       { style: 'industrial' },
     ];
-
-    expect(calculateStyle(images)).toEqual([
+    const expectedResult = [
       {
         style: 'contemporary',
         value: (4 / 12),
@@ -46,7 +58,9 @@ describe('UTILS', () => {
         style: 'other',
         value: (1 - (11 / 12)),
       },
-    ]);
+    ];
+
+    expect(calculateStyle(images)).toEqual(expectedResult);
   });
 
   it('lsSetFavorites should set favorites to local storage', () => {
