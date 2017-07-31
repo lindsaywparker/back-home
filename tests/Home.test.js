@@ -11,7 +11,7 @@ describe('HOME COMPONENT', () => {
 
   it('should render Styles & Favorites Nav links', () => {
     expect(wrapper.find('NavLink')).toHaveLength(2);
-    expect(wrapper.find('NavLink h2').at(0).text()).toEqual('Compare Styles');
-    expect(wrapper.find('NavLink h2').at(1).text()).toEqual('View Favorites');
+    expect(wrapper.find('NavLink h4').at(0).text()).toEqual('Compare Styles');
+    expect(wrapper.find('NavLink h4').at(1).text()).toEqual('View Favorites');
   });
 });
