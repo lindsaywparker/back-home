@@ -9,8 +9,8 @@ const PageInfo = ({ value, title, images }) => {
     case '/styles':
       content =
         <container>
-          <h2>STYLES</h2>
-          <p className='fav-style'>A collection of fundamental design styles you're likely to see</p>
+          <h2 className='page-title'>STYLES</h2>
+          <p className='subtitle'>A collection of fundamental design styles you're likely to see</p>
         </container>;
       break;
     case '/favorites':
@@ -18,7 +18,7 @@ const PageInfo = ({ value, title, images }) => {
         const preferenceResults = calculateStyle(images);
         content =
           <container>
-            <h2>FAVORITES</h2>
+            <h2 className='page-title'>FAVORITES</h2>
             {preferenceResults.map((result, i) =>
               <div className='style-calc' key={i}>
                 <p className='fav-percent'>{Math.round((result.value) * 100)}%</p>
@@ -29,9 +29,9 @@ const PageInfo = ({ value, title, images }) => {
       } else {
         content =
           <container>
-            <h2>FAVORITES</h2>
-            <p className='fav-style'>YOU'VE NOT SAVED ANY FAVORITES</p>
-            <p className='fav-style'>Check out Styles and click the heart on an image to save it here</p>
+            <h2 className='page-title'>FAVORITES</h2>
+            <p className='subtitle'>YOU'VE NOT SAVED ANY FAVORITES</p>
+            <p className='subtitle'>Check out Styles and click the heart on an image to save it here</p>
           </container>;
       }
 
@@ -39,8 +39,8 @@ const PageInfo = ({ value, title, images }) => {
     default:
       content =
         <container>
-          <h2>{title}</h2>
-          <p className='fav-style'>{PAGE_SUMMARY[value]}</p>
+          <h2 className='page-title'>{title}</h2>
+          <p className='subtitle'>{PAGE_SUMMARY[value]}</p>
         </container>;
   }
 

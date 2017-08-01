@@ -9,13 +9,17 @@ const Header = ({ location }) => {
       </NavLink>
       <container className='nav-btn-container'>
         {(location.pathname !== '/styles') &&
-          <NavLink to='/styles'>
-            <h4 className='nav-btn'>Styles</h4>
-          </NavLink>}
+          <div className='header-btn'>
+            <NavLink to='/styles'>
+              <h4 className='nav-btn'>Styles</h4>
+            </NavLink>
+          </div>}
         {(location.pathname !== '/favorites') &&
-          <NavLink to='/favorites'>
-            <h4 className='nav-btn'>Favorites</h4>
-          </NavLink>}
+          <div className='header-btn'>
+            <NavLink to='/favorites'>
+              <h4 className='nav-btn'>Favorites</h4>
+            </NavLink>
+          </div>}
         {/* <h4 className='nav-btn'>See More</h4> */}
       </container>
     </div>
