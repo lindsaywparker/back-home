@@ -43,7 +43,10 @@ export default class StylesComparison extends Component {
 
     return (
       <div className='styles-comparison'>
-        <PageInfo location={location} />
+        <container>
+          <h2 className='page-title'>STYLES</h2>
+          <p className='subtitle'>A collection of fundamental design styles you're likely to see</p>
+        </container>
         {content}
       </div>
     );

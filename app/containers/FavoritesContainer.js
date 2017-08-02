@@ -4,6 +4,7 @@ import { handleFavoriteAction, getFavoritesAction } from '../actions/images';
 
 const mapStateToProps = (state) => {
   return {
+    isLoading: state.isLoading,
     images: state.favorites,
     favorites: state.favorites,
   };

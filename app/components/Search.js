@@ -8,14 +8,18 @@ export default class Search extends Component {
     super();
     this.state = {
       input: '',
-      searchTerm: '',
+      searchTerm: [''],
     };
+  }
+
+  componentDidMount() {
+    if (!this.props.images.length) this.props.fetchImages();
   }
 
   handleFilter(e) {
     this.setState({
       input: e.target.value,
-      searchTerm: e.target.value.split(' ').join('-'),
+      searchTerm: e.target.value.toLowerCase().split(' '),
     });
   }
 
@@ -26,15 +30,21 @@ export default class Search extends Component {
     });
   }
 
-  componentDidMount() {
-    if (!this.props.images.length) this.props.fetchImages();
+  filterImages() {
+    const { searchTerm } = this.state;
+    return this.props.images.filter((image) => {
+      let find = true;
+      for (let i = 0; i < searchTerm.length; i++) {
+        find = image.src.includes(searchTerm[i]);
+        if (!find) return false;
+      }
+      return find;
+    });
   }
 
   render() {
-    const renderImages = this.props.images.filter(image =>
-      image.src.includes(this.state.searchTerm.toLowerCase()),
-    );
-    const renderImagesList = this.props.isLoading ?
+    const renderImages = this.filterImages();
+    const renderImagesContent = this.props.isLoading ?
       <div className='loader-container'>
         <img className='loader' src='../assets/loader.gif' alt='Loading...' />
       </div>
@@ -62,7 +72,7 @@ export default class Search extends Component {
             </div>
           </container>
         </div>
-        {renderImagesList}
+        {renderImagesContent}
       </div>
     );
   }
