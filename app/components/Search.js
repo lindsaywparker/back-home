@@ -25,13 +25,14 @@ export default class Search extends Component {
     );
 
     return (
-      <div className='main'>
+      <div className='search'>
         <div className='page-info'>
           <container>
             <h2 className='page-title'>SEARCH</h2>
             <input className='search-input'
                    type='text'
                    placeholder='e.g., contemporary kitchen, victorian, ...'
+                   autoFocus
                    onChange={this.handleFilter.bind(this)} />
           </container>
         </div>

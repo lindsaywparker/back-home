@@ -55,7 +55,6 @@ a {
 }
 
 .tagline {
-  margin-bottom: 40px;
   color: #C88C61;
   font-family: 'Martel Sans', sans-serif;
   font-size: 40px;
@@ -265,13 +264,14 @@ a {
   grid-column: 1 / -1;
   width: 75%;
   min-width: 280px;
+  max-width: 550px;
   height: 30px;
   outline: none;
   border: 1px solid #E5E5E5;
   border-radius: 15px;
   margin: 15px auto;
   padding-left: 10px;
-  font-size: 12px;
+  font-size: 14px;
   font-family: 'Open Sans', sans-serif;
   font-style: italic;
 }
@@ -292,7 +292,7 @@ a {
   }
   
   .nav-btn {
-    width: 150px;
+    margin-left: 40px;
     text-align: right;
   }
   
@@ -355,6 +355,11 @@ a {
   
   .favorite-icon {
     top: 354px;
+  }
+  
+  .search-input {
+    display: block;
+    max-width: 650px;
   }
 }
 
