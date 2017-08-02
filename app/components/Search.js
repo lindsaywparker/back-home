@@ -36,9 +36,9 @@ export default class Search extends Component {
           </container>
         </div>
         <ImagesList isLoading={this.props.isLoading}
-                  images={renderImages}
-                  favorites={this.props.favorites}
-                  handleFavorite={this.props.handleFavorite.bind(this)}/>
+                    images={renderImages}
+                    favorites={this.props.favorites}
+                    handleFavorite={this.props.handleFavorite.bind(this)}/>
       </div>
     );
   }
