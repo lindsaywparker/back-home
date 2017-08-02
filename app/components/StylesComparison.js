@@ -6,7 +6,7 @@ import { STYLES, CATEGORIES, DISPLAY_NAME } from '../helpers/constants';
 
 export default class StylesComparison extends Component {
   componentDidMount() {
-    this.props.fetchImages();
+    if (!this.props.images.length) this.props.fetchImages();
   }
 
   componentWillUnmount() {

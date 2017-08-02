@@ -16,6 +16,11 @@ const Home = () => {
             <h4 className='btn-title'>View Favorites</h4>
           </button>
         </NavLink>
+        {/* <NavLink to='/search'>
+          <button className='homepage-btns search'>
+            <h4 className='btn-title'>Search Photos</h4>
+          </button>
+        </NavLink> */}
       </container>
     </div>
   );

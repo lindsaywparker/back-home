@@ -5,6 +5,7 @@ import Home from './Home';
 import MainContainer from '../containers/MainContainer';
 import FavoritesContainer from '../containers/FavoritesContainer';
 import StylesCompContainer from '../containers/StylesCompContainer';
+import SearchContainer from '../containers/SearchContainer';
 
 class App extends Component {
   render() {
@@ -20,6 +21,9 @@ class App extends Component {
         <Route exact
                path='/favorites'
                component={FavoritesContainer} />
+        <Route exact
+               path='/search'
+               component={SearchContainer} />
         <Route exact
                path='/styles/:type'
                render={ ({ match }) =>
