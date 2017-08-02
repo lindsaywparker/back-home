@@ -22,11 +22,9 @@ describe('IMAGES-LIST COMPONENT', () => {
       category: 'kitchen',
     },
   ];
-  const wrapper = shallow(<ImagesList isLoading={false}
-                                      images={images}
+  const wrapper = shallow(<ImagesList images={images}
                                       favorites={[]} />);
-  const wrapperLoading = shallow(<ImagesList isLoading={true}
-                                      images={images}
+  const wrapperLoading = shallow(<ImagesList images={images}
                                       favorites={[]} />);
 
   it('should render a component element', () => {

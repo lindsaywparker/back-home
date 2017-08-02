@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import PageInfo from './PageInfo';
 import FavoriteInfo from './FavoriteInfo';
+import PageInfo from './PageInfo';
 import ImagesList from './ImagesList';
 import { DISPLAY_NAME } from '../helpers/constants';
 
@@ -9,16 +9,21 @@ export default class Main extends Component {
     this.props.getFavorites();
   }
 
-  // TODO: bring out logic below into helpers here.
   oneConditionFilter(condition) {
     return this.props.images.filter(image =>
-      image.style === condition || image.category === condition);
+      image.style === condition || image.category === condition,
+    );
+  }
+
+  twoConditionFilter(style, category) {
+    return this.props.images.filter(image =>
+      image.style === style && image.category === category,
+    );
   }
 
   render() {
     const { type, style, category } = this.props;
-    const value = type;
-    let title = DISPLAY_NAME[value];
+    let title = DISPLAY_NAME[type];
     let renderImages = this.props.images;
 
     if (type) {
@@ -26,11 +31,8 @@ export default class Main extends Component {
     }
 
     if (style && category) {
-      renderImages = renderImages.filter(image =>
-        image.style === style &&
-        image.category === category);
-      title = `${DISPLAY_NAME[style]}
-               ${DISPLAY_NAME[category]}`;
+      renderImages = this.twoConditionFilter(style, category);
+      title = `${DISPLAY_NAME[style]} ${DISPLAY_NAME[category]}`;
     }
 
     return (
@@ -38,14 +40,12 @@ export default class Main extends Component {
         {location.pathname === '/favorites' ?
           <FavoriteInfo images={this.props.favorites}/>
           :
-          <PageInfo value={value}
-                    title={title}
-                    images={renderImages}/>
+          <PageInfo type={type}
+                    title={title} />
         }
-        <ImagesList isLoading={this.props.isLoading}
-                      images={renderImages}
-                      favorites={this.props.favorites}
-                      handleFavorite={this.props.handleFavorite.bind(this)} />
+        <ImagesList images={renderImages}
+                    favorites={this.props.favorites}
+                    handleFavorite={this.props.handleFavorite.bind(this)} />
       </div>
     );
   }

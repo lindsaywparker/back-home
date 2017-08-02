@@ -47,8 +47,7 @@ export default class Search extends Component {
         <img className='loader' src='../assets/loader.gif' alt='Loading...' />
       </div>
       :
-      <ImagesList isLoading={this.props.isLoading}
-                  images={renderImages}
+      <ImagesList images={renderImages}
                   favorites={this.props.favorites}
                   handleFavorite={this.props.handleFavorite.bind(this)}/>;
 
