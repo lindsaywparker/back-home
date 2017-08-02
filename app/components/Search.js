@@ -7,12 +7,12 @@ export default class Search extends Component {
   constructor() {
     super();
     this.state = {
-      input: [],
+      input: [''],
     };
   }
 
   handleFilter(e) {
-    this.setState({ input: e.target.value.split(' ').filter(word => word !== '') });
+    this.setState({ input: e.target.value.split(' ') });
   }
 
   componentDidMount() {
@@ -20,12 +20,9 @@ export default class Search extends Component {
   }
 
   render() {
-    const renderImages = !this.state.input.length ?
-      []
-      :
-      this.props.images.filter(image =>
-        image.src.includes(this.state.input[0].toLowerCase()),
-      );
+    const renderImages = this.props.images.filter(image =>
+      image.src.includes(this.state.input[0].toLowerCase()),
+    );
 
     return (
       <div className='main'>
@@ -34,7 +31,7 @@ export default class Search extends Component {
             <h2 className='page-title'>SEARCH</h2>
             <input className='search-input'
                    type='text'
-                   placeholder='Search'
+                   placeholder='e.g., contemporary kitchen, victorian, ...'
                    onChange={this.handleFilter.bind(this)} />
           </container>
         </div>
