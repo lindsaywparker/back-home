@@ -42,14 +42,6 @@ export default class Search extends Component {
 
   render() {
     const renderImages = this.filterImages();
-    const renderImagesContent = this.props.isLoading ?
-      <div className='loader-container'>
-        <img className='loader' src='../assets/loader.gif' alt='Loading...' />
-      </div>
-      :
-      <ImagesList images={renderImages}
-                  favorites={this.props.favorites}
-                  handleFavorite={this.props.handleFavorite.bind(this)}/>;
 
     return (
       <div className='search'>
@@ -69,7 +61,17 @@ export default class Search extends Component {
             </div>
           </container>
         </div>
-        {renderImagesContent}
+        {this.props.isLoading ?
+          <div className='loader-container'>
+            <img className='loader'
+                 src='../assets/loader.gif'
+                 alt='Loading...' />
+          </div>
+          :
+          <ImagesList images={renderImages}
+                      favorites={this.props.favorites}
+                      handleFavorite={this.props.handleFavorite.bind(this)}/>}
+
       </div>
     );
   }
