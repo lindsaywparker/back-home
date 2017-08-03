@@ -16,14 +16,14 @@ class App extends Component {
                path='/'
                component={Home} />
         <Route exact
-               path='/styles'
-               component={StylesCompContainer} />
-        <Route exact
                path='/favorites'
                component={FavoritesContainer} />
         <Route exact
                path='/search'
                component={SearchContainer} />
+        <Route exact
+               path='/styles'
+               component={StylesCompContainer } />
         <Route exact
                path='/styles/:type'
                render={ ({ match }) =>
