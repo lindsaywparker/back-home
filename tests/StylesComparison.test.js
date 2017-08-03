@@ -19,7 +19,7 @@ describe('STYLES COMPARISON COMPONENT', () => {
   });
 
   it('should render PageInfo', () => {
-    expect(wrapper.find('PageInfo')).toHaveLength(1);
+    expect(wrapper.find('.page-info')).toHaveLength(1);
   });
 
   it('should render a loader when isLoading is true', () => {
@@ -35,6 +35,7 @@ describe('STYLES COMPARISON COMPONENT', () => {
 
   it('should call fetchImages on mount', () => {
     const mountWrapper = mount(<StylesComparison isLoading={true}
+                                                 images={[]}
                                                  fetchImages={mockFn}/>);
 
     expect(mockFn).toHaveBeenCalledTimes(1);

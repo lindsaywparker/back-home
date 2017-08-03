@@ -24,14 +24,13 @@ describe('IMAGES-LIST COMPONENT', () => {
   ];
   const wrapper = shallow(<ImagesList images={images}
                                       favorites={[]} />);
-  const wrapperLoading = shallow(<ImagesList images={images}
-                                      favorites={[]} />);
+  const wrapperLoading = shallow(<ImagesList favorites={[]} />);
 
   it('should render a component element', () => {
     expect(wrapper.find('.images-list')).toHaveLength(1);
   });
 
-  it('should render a loader when isLoading is true', () => {
+  it('should render a loader when there are no images', () => {
     expect(wrapperLoading.find('.loader')).toHaveLength(1);
     expect(wrapper.find('.loader')).toHaveLength(0);
   });

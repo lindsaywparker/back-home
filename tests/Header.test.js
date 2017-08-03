@@ -15,8 +15,8 @@ describe('HEADER COMPONENT', () => {
     expect(wrapper.find('h1').text()).toEqual('BACK HOME');
   });
 
-  it('should render two Nav Links when on the home page', () => {
-    expect(wrapper.find('.nav-btn')).toHaveLength(2);
+  it('should render three Nav Links when on the home page', () => {
+    expect(wrapper.find('.nav-btn')).toHaveLength(3);
   });
 
   it('should render a Favorites Nav Link when on styles page', () => {

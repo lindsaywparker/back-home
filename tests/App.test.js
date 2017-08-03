@@ -16,6 +16,6 @@ describe('APP COMPONENT', () => {
   });
 
   it('should render Routes', () => {
-    expect(wrapper.find('Route')).toHaveLength(5);
+    expect(wrapper.find('Route')).toHaveLength(6);
   });
 });

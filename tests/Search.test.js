@@ -59,16 +59,15 @@ describe('SEARCH COMPONENT', () => {
   it('should have an initial state', () => {
     expect(wrapper.state()).toEqual({
       input: '',
-      searchTerm: '',
+      searchTerm: [''],
     });
   });
 
   it('should handleFilter', () => {
-    const searchInput = wrapper.find('.search-input');
     searchInput.simulate('change', { target: { value: 'modern kitchen' } });
     expect(wrapper.state()).toEqual({
       input: 'modern kitchen',
-      searchTerm: 'modern-kitchen',
+      searchTerm: ['modern', 'kitchen'],
     });
   });
 
@@ -77,7 +76,7 @@ describe('SEARCH COMPONENT', () => {
     clearSearch.simulate('click');
     expect(wrapper.state()).toEqual({
       input: '',
-      searchTerm: '',
+      searchTerm: [''],
     });
   });
 
