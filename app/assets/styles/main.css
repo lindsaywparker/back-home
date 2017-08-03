@@ -147,6 +147,10 @@ a {
   text-align: center;
 }
 
+.see-more-style {
+  color: #323232;
+}
+
 .see-more-container {
   margin-top: 15px;
 }
@@ -254,10 +258,6 @@ a {
 
 .favorite-active:hover {
   background: no-repeat url('../favorite-active-hover.svg');
-}
-
-.see-more {
-  color: #323232;
 }
 
 .search-clear-container {
