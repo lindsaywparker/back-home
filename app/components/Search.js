@@ -70,8 +70,8 @@ export default class Search extends Component {
           :
           <ImagesList images={renderImages}
                       favorites={this.props.favorites}
-                      handleFavorite={this.props.handleFavorite.bind(this)}/>}
-
+                      handleFavorite={this.props.handleFavorite.bind(this)} />
+        }
       </div>
     );
   }
